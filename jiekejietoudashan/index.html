@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>捷克街头搭讪全集在线观看-布拉格实景互动合集</title>
+<meta name="description" content="捷克街头搭讪全集在线观看，汇总布拉格老城、查理大桥、瓦茨拉夫广场等实景街头互动片段。按城市街区、拍摄年份、对话完整度分类整理，附观看顺序建议与片段核对说明。">
+<meta name="keywords" content="捷克街头搭讪全集在线观看">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4858'/%3E%3Cpath d='M16 42 L32 18 L48 42 Z' fill='%23e8b04b'/%3E%3Crect x='26' y='38' width='12' height='12' fill='%23f4efe6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1e2a30;
+  --ink-soft:#41545d;
+  --paper:#f6f2ea;
+  --card:#fffdf8;
+  --line:#d8cfbe;
+  --main:#2f4858;
+  --main-deep:#20343f;
+  --accent:#c8792f;
+  --accent-soft:#f0dcc2;
+  --teal:#3f6b63;
+  --danger:#8c3b2e;
+  --radius-s:6px;
+  --radius-m:12px;
+  --radius-l:20px;
+  --shadow-s:0 1px 2px rgba(32,52,63,.08);
+  --shadow-m:0 6px 18px rgba(32,52,63,.10);
+  --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:24px;--sp-6:32px;--sp-7:48px;--sp-8:64px;
+  --fs-xs:12px;--fs-s:13px;--fs-m:15px;--fs-l:17px;--fs-xl:21px;--fs-2xl:27px;--fs-3xl:36px;
+  --font:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;
+  --font-sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;
+  --announce-h:44px;
+  --head-h:64px;
+  --sticky-h:108px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:var(--fs-m);
+}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.35;margin:0 0 var(--sp-3);color:var(--main-deep);}
+h1{font-size:var(--fs-3xl);}
+h2{font-size:var(--fs-2xl);}
+h3{font-size:var(--fs-xl);}
+h4{font-size:var(--fs-l);}
+p{margin:0 0 var(--sp-4);}
+a{color:var(--teal);text-decoration:none;}
+a:hover{text-decoration:underline;}
+ul,ol{margin:0 0 var(--sp-4);padding-left:1.3em;}
+img{max-width:100%;display:block;}
+button{font:inherit;}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.sticky-zone{position:sticky;top:0;z-index:60;}
+.announce{
+  background:var(--main-deep);
+  color:#f4efe6;
+  font-size:var(--fs-s);
+  padding:0 var(--sp-4);
+  min-height:var(--announce-h);
+  display:flex;align-items:center;gap:var(--sp-3);
+  overflow-x:auto;white-space:nowrap;
+}
+.announce b{color:#f2c66a;font-weight:600;}
+.announce .dot{width:6px;height:6px;border-radius:50%;background:#f2c66a;flex:none;}
+.announce a{color:#f2c66a;text-decoration:underline;}
+
+.site-head{
+  background:rgba(246,242,234,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  min-height:var(--head-h);
+  display:flex;align-items:center;
+  padding:var(--sp-2) var(--sp-4);
+  gap:var(--sp-4);
+}
+.brand{display:flex;align-items:center;gap:var(--sp-3);flex:none;}
+.brand svg{width:38px;height:38px;flex:none;}
+.brand-text{font-family:var(--font);font-size:var(--fs-l);font-weight:700;color:var(--main-deep);letter-spacing:.5px;}
+.head-nav{display:flex;gap:var(--sp-2);flex-wrap:nowrap;overflow-x:auto;margin-left:auto;scrollbar-width:none;}
+.head-nav::-webkit-scrollbar{display:none;}
+.head-nav a{
+  color:var(--ink-soft);font-size:var(--fs-s);padding:6px 10px;border-radius:999px;white-space:nowrap;
+  border:1px solid transparent;
+}
+.head-nav a:hover{background:var(--accent-soft);color:var(--main-deep);text-decoration:none;}
+.head-search{position:relative;flex:none;}
+.head-search input{
+  width:170px;border:1px solid var(--line);background:var(--card);
+  border-radius:999px;padding:7px 12px;font:inherit;font-size:var(--fs-s);color:var(--ink);
+}
+.head-search input:focus{outline:2px solid var(--accent);outline-offset:1px;}
+.search-feedback{
+  position:absolute;top:calc(100% + 6px);right:0;width:250px;
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);
+  box-shadow:var(--shadow-m);padding:var(--sp-3);font-size:var(--fs-s);display:none;z-index:80;
+}
+.search-feedback.show{display:block;}
+.search-feedback li{list-style:none;margin:0 0 4px;}
+.search-feedback ul{padding:0;margin:0;}
+.menu-btn{
+  display:none;background:var(--main);color:#fff;border:none;border-radius:var(--radius-s);
+  padding:8px 12px;cursor:pointer;flex:none;
+}
+main{padding:0 var(--sp-4);}
+.wrap{max-width:1180px;margin:0 auto;}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;margin:var(--sp-6) auto var(--sp-7);
+  border-radius:var(--radius-l);
+  background:linear-gradient(135deg,#2f4858 0%,#3f6b63 62%,#c8792f 130%);
+  color:#f6f2ea;overflow:hidden;
+  box-shadow:var(--shadow-m);
+  scroll-margin-top:var(--sticky-h);
+}
+.hero-inner{
+  position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-5);
+  padding:var(--sp-7) var(--sp-6);
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:var(--fs-xs);
+  letter-spacing:2px;color:#f2c66a;border:1px solid rgba(242,198,106,.55);
+  padding:4px 12px;border-radius:999px;margin-bottom:var(--sp-4);
+}
+.hero h1{color:#fff;margin-bottom:var(--sp-3);text-shadow:0 2px 12px rgba(0,0,0,.18);}
+.hero-lead{font-size:var(--fs-l);max-width:34em;color:#e9e2d5;}
+.hero-lead strong{color:#f2c66a;}
+.hero-cta{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-5);}
+.btn{
+  display:inline-block;padding:10px 20px;border-radius:999px;font-size:var(--fs-s);
+  border:1px solid rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.08);
+}
+.btn:hover{background:rgba(255,255,255,.2);text-decoration:none;}
+.btn-solid{background:#f2c66a;color:#25333a;border-color:#f2c66a;font-weight:700;}
+.btn-solid:hover{background:#f7d78f;text-decoration:none;}
+.hero-stats{display:flex;gap:var(--sp-5);margin-top:var(--sp-5);flex-wrap:wrap;}
+.hero-stats div{min-width:80px;}
+.hero-stats b{display:block;font-family:var(--font);font-size:var(--fs-2xl);color:#f2c66a;line-height:1.2;}
+.hero-stats span{font-size:var(--fs-xs);color:#d8d0c1;letter-spacing:1px;}
+.hero-art{position:relative;min-height:260px;}
+.hero-art svg{width:100%;height:auto;display:block;filter:drop-shadow(0 8px 20px rgba(0,0,0,.25));}
+.hero-bg-lines{position:absolute;inset:0;z-index:1;opacity:.35;}
+
+/* ===== 通用板块 ===== */
+section.block{
+  margin:0 0 var(--sp-7);
+  scroll-margin-top:var(--sticky-h);
+}
+.block-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap;margin-bottom:var(--sp-4);}
+.block-head p{margin:0;color:var(--ink-soft);font-size:var(--fs-s);}
+.tag-line{display:flex;flex-wrap:wrap;gap:var(--sp-2);margin-bottom:var(--sp-4);}
+.tag{font-size:var(--fs-xs);background:var(--accent-soft);color:#7a4a15;padding:3px 10px;border-radius:999px;}
+
+/* 三栏门户 */
+.portal-grid{display:grid;grid-template-columns:230px minmax(0,1fr) 300px;gap:var(--sp-5);align-items:start;}
+.side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4);box-shadow:var(--shadow-s);}
+.side-card h3{font-size:var(--fs-l);margin-bottom:var(--sp-3);}
+.side-sticky{position:sticky;top:calc(var(--sticky-h) + 12px);}
+.side-nav ul{list-style:none;padding:0;margin:0;}
+.side-nav li{margin-bottom:2px;}
+.side-nav a{display:block;padding:6px 10px;border-radius:var(--radius-s);font-size:var(--fs-s);color:var(--ink-soft);border-left:3px solid transparent;}
+.side-nav a:hover{background:#f1eadc;text-decoration:none;}
+.side-nav a.active{background:var(--accent-soft);color:var(--main-deep);border-left-color:var(--accent);font-weight:700;}
+
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--sp-3);}
+.ov-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4);box-shadow:var(--shadow-s);}
+.ov-card h3{font-size:var(--fs-l);margin-bottom:var(--sp-2);}
+.ov-card p{font-size:var(--fs-s);color:var(--ink-soft);margin:0;}
+.ov-card .num{font-family:var(--font);font-size:var(--fs-2xl);color:var(--accent);line-height:1.2;}
+
+/* 精选卡片网格 */
+.feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-4);}
+.feature-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);overflow:hidden;box-shadow:var(--shadow-s);display:flex;flex-direction:column;}
+.feature-card img{width:100%;height:160px;object-fit:cover;}
+.feature-card .body{padding:var(--sp-4);flex:1;display:flex;flex-direction:column;}
+.feature-card h3{font-size:var(--fs-l);margin-bottom:var(--sp-2);}
+.feature-card p{font-size:var(--fs-s);color:var(--ink-soft);margin-bottom:var(--sp-3);}
+.meta{font-size:var(--fs-xs);color:#7b8a90;display:flex;gap:var(--sp-3);flex-wrap:wrap;margin-top:auto;}
+
+/* 紧凑列表 */
+.tight-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);}
+.tight-list li{
+  display:grid;grid-template-columns:78px 1fr auto;gap:var(--sp-3);align-items:baseline;
+  padding:var(--sp-3) var(--sp-2);border-bottom:1px solid var(--line);font-size:var(--fs-s);
+}
+.tight-list time{color:var(--accent);font-variant-numeric:tabular-nums;font-weight:700;}
+.tight-list a{color:var(--ink);}
+.tight-list .kind{color:var(--ink-soft);font-size:var(--fs-xs);white-space:nowrap;}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp-3);}
+.cat-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4);transition:transform .15s;}
+.cat-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-m);border-color:var(--accent);}
+.cat-item b{display:block;font-family:var(--font);font-size:var(--fs-l);color:var(--main-deep);margin-bottom:4px;}
+.cat-item span{font-size:var(--fs-xs);color:var(--ink-soft);}
+
+/* 深度解析 */
+.reading{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-l);padding:var(--sp-6);box-shadow:var(--shadow-s);}
+.reading h3{margin-top:var(--sp-5);}
+.reading h3:first-child{margin-top:0;}
+.reading .judgment{border-left:4px solid var(--accent);background:#fbf4e6;padding:var(--sp-3) var(--sp-4);border-radius:0 var(--radius-m) var(--radius-m) 0;font-family:var(--font);font-size:var(--fs-l);color:var(--main-deep);}
+.compare{width:100%;border-collapse:collapse;margin:var(--sp-3) 0 var(--sp-4);font-size:var(--fs-s);}
+.compare th,.compare td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+.compare th{background:#efe7d7;font-family:var(--font);}
+.panel-pair{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3);margin:var(--sp-3) 0 var(--sp-4);}
+.panel{border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3);font-size:var(--fs-s);}
+.panel.fact{background:#eef4f0;}
+.panel.claim{background:#fbf1e4;}
+.panel h4{margin-bottom:var(--sp-2);font-size:var(--fs-m);}
+.timeline{list-style:none;padding:0;margin:var(--sp-3) 0 var(--sp-4);border-left:3px solid var(--accent-soft);}
+.timeline li{position:relative;padding:0 0 var(--sp-3) var(--sp-4);font-size:var(--fs-s);}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--accent);border:2px solid var(--card);}
+.timeline time{color:var(--accent);font-weight:700;margin-right:6px;}
+
+/* 步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-3);}
+.steps li{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4) var(--sp-4) var(--sp-4) 62px;}
+.steps li::before{
+  counter-increment:step;content:counter(step);
+  position:absolute;left:var(--sp-4);top:var(--sp-4);
+  width:32px;height:32px;border-radius:50%;background:var(--main);color:#f2c66a;
+  display:grid;place-items:center;font-family:var(--font);font-weight:700;
+}
+.steps h4{margin-bottom:4px;}
+.steps p{margin:0;font-size:var(--fs-s);color:var(--ink-soft);}
+
+/* FAQ */
+details.faq{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);margin-bottom:var(--sp-2);}
+details.faq summary{cursor:pointer;padding:var(--sp-3) var(--sp-4);font-family:var(--font);font-size:var(--fs-l);color:var(--main-deep);list-style:none;display:flex;justify-content:space-between;gap:var(--sp-3);}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{content:"+";color:var(--accent);font-weight:700;font-size:var(--fs-xl);line-height:1;}
+details.faq[open] summary::after{content:"–";}
+details.faq .ans{padding:0 var(--sp-4) var(--sp-4);font-size:var(--fs-s);color:var(--ink-soft);}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-3);}
+.comment{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-4);}
+.comment p{font-size:var(--fs-s);margin-bottom:var(--sp-2);}
+.comment .who{font-size:var(--fs-xs);color:#7b8a90;display:flex;justify-content:space-between;gap:var(--sp-2);}
+.stars{color:var(--accent);letter-spacing:1px;}
+.comment.neutral{border-style:dashed;}
+.comment.crit{background:#fbf1e4;}
+
+/* 榜单 */
+.rank{list-style:none;padding:0;margin:0;display:grid;gap:var(--sp-2);}
+.rank li{display:grid;grid-template-columns:40px 1fr auto;gap:var(--sp-3);align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-m);padding:var(--sp-3) var(--sp-4);}
+.rank .no{font-family:var(--font);font-size:var(--fs-xl);color:var(--accent);font-weight:700;}
+.rank b{font-weight:600;}
+.rank .score{font-size:var(--fs-s);color:var(--teal);white-space:nowrap;}
+.bar{height:6px;background:#e7dfd0;border-radius:999px;overflow:hidden;margin-top:4px;}
+.bar i{display:block;height:100%;background:var(--teal);border-radius:999px;}
+
+/* 相关推荐标签 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:var(--sp-2);}
+.rec-tags a{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:var(--fs-s);color:var(--main-deep);}
+.rec-tags a:hover{border-color:var(--accent);background:var(--accent-soft);text-decoration:none;}
+
+/* 引语卡 */
+.quote-card{background:var(--main-deep);color:#eee6d6;border-radius:var(--radius-l);padding:var(--sp-5);position:relative;overflow:hidden;}
+.quote-card::before{content:"“";position:absolute;right:20px;top:-10px;font-size:140px;font-family:var(--font);color:rgba(242,198,106,.18);line-height:1;}
+.quote-card p{font-family:var(--font);font-size:var(--fs-l);color:#f4efe6;}
+.quote-card .by{font-size:var(--fs-s);color:#f2c66a;}
+
+/* 信息核对表 */
+.check-table{width:100%;border-collapse:collapse;font-size:var(--fs-s);background:var(--card);}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;}
+.check-table th{background:#efe7d7;font-family:var(--font);}
+.state-ok{color:var(--teal);font-weight:700;}
+.state-wait{color:var(--accent);font-weight:700;}
+.state-no{color:var(--danger);font-weight:700;}
+
+/* ===== 页尾 ===== */
+footer.site-foot{
+  background:var(--main-deep);color:#c9c0b0;margin-top:var(--sp-7);
+  padding:var(--sp-7) var(--sp-4) var(--sp-5);font-size:var(--fs-s);
+}
+.foot-wrap{max-width:1180px;margin:0 auto;}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-5);margin-bottom:var(--sp-5);}
+.foot-brand svg{width:34px;height:34px;vertical-align:middle;margin-right:8px;}
+.foot-brand b{font-family:var(--font);font-size:var(--fs-l);color:#f4efe6;}
+.foot-brand p{margin-top:var(--sp-3);color:#a9a294;max-width:26em;}
+footer h4{color:#f2c66a;font-size:var(--fs-m);margin-bottom:var(--sp-2);}
+footer ul{list-style:none;padding:0;margin:0;}
+footer li{margin-bottom:6px;}
+footer a{color:#c9c0b0;}
+footer a:hover{color:#f2c66a;}
+.foot-note{border-top:1px solid rgba(255,255,255,.12);padding-top:var(--sp-4);color:#948d80;font-size:var(--fs-xs);line-height:1.9;}
+.foot-note strong{color:#c9c0b0;font-weight:600;}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;
+  width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;
+  background:var(--main);color:#f2c66a;box-shadow:var(--shadow-m);
+  font-size:20px;display:none;place-items:center;
+}
+.to-top.show{display:grid;}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;animation:none !important;}
+}
+
+/* ===== 响应式 ===== */
+@media (max-width:1020px){
+  .portal-grid{grid-template-columns:230px minmax(0,1fr);}
+  .portal-grid .right-col{grid-column:1 / -1;}
+  .side-sticky{position:static;}
+  .feature-grid{grid-template-columns:1fr;}
+  .overview-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .foot-top{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:760px){
+  :root{--fs-3xl:28px;--fs-2xl:22px;--fs-xl:18px;}
+  .head-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:var(--card);border-bottom:1px solid var(--line);
+    flex-direction:column;padding:var(--sp-3) var(--sp-4);box-shadow:var(--shadow-m);
+    overflow:visible;
+  }
+  .site-head{position:relative;flex-wrap:wrap;}
+  .head-nav.open{display:flex;}
+  .head-nav a{padding:10px 6px;border-radius:var(--radius-s);}
+  .menu-btn{display:inline-block;order:3;}
+  .head-search{order:2;margin-left:auto;}
+  .head-search input{width:130px;}
+  .hero-inner{grid-template-columns:1fr;padding:var(--sp-6) var(--sp-4);}
+  .hero-art{min-height:0;order:2;}
+  .portal-grid{grid-template-columns:1fr;}
+  .portal-grid .right-col{grid-column:auto;}
+  .overview-grid,.cat-grid,.comments{grid-template-columns:1fr;}
+  .panel-pair{grid-template-columns:1fr;}
+  .tight-list li{grid-template-columns:64px 1fr;row-gap:2px;}
+  .tight-list .kind{grid-column:2;}
+  .foot-top{grid-template-columns:1fr;}
+  main{padding:0 var(--sp-3);}
+  .reading{padding:var(--sp-4);}
+  .to-top{width:42px;height:42px;right:12px;bottom:14px;}
+}
+@media (max-width:400px){
+  .head-search input{width:104px;}
+  .brand-text{font-size:var(--fs-m);}
+  .hero-stats{gap:var(--sp-4);}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-zone">
+  <div class="announce" role="region" aria-label="更新公告">
+    <span class="dot" aria-hidden="true"></span>
+    <b>11月6日更新</b>
+    <span>新增「布尔诺自由广场 2026-10-19 傍晚场」12 分钟完整对话，导航条同步加入第 9 个街区分类。</span>
+    <a href="/#latest">查看更新清单</a>
+  </div>
+  <header class="site-head">
+    <a class="brand" href="/#top" aria-label="捷克街头搭讪全集在线观看 首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#2f4858"/>
+        <path d="M12 46 L24 20 L30 32 L38 14 L52 46 Z" fill="#3f6b63"/>
+        <path d="M22 46 L32 26 L42 46 Z" fill="#f2c66a"/>
+        <rect x="28" y="38" width="8" height="8" fill="#f6f2ea"/>
+        <circle cx="48" cy="18" r="5" fill="#c8792f"/>
+      </svg>
+      <span class="brand-text">捷克街头搭讪全集在线观看</span>
+    </a>
+    <nav class="head-nav" id="headNav" aria-label="主题导航">
+      <a href="/#overview">街区概览</a>
+      <a href="/#featured">精选片段</a>
+      <a href="/#latest">更新清单</a>
+      <a href="/#channels">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comment">观众反馈</a>
+      <a href="/#rank">口碑榜</a>
+    </nav>
+    <div class="head-search">
+      <input type="search" id="searchInput" placeholder="搜街区、年份、片段" aria-label="站内查找片段">
+      <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="headNav">菜单</button>
+  </header>
+</div>
+
+<main id="top">
+  <div class="wrap">
+
+    <!-- 首屏 -->
+    <section class="hero" aria-labelledby="heroH1">
+      <div class="hero-bg-lines" aria-hidden="true">
+        <svg viewBox="0 0 800 400" preserveAspectRatio="none" width="100%" height="100%">
+          <path d="M0 320 Q200 250 400 300 T800 260" stroke="#f2c66a" stroke-width="1.5" fill="none" opacity=".5"/>
+          <path d="M0 360 Q240 300 480 350 T800 320" stroke="#f6f2ea" stroke-width="1" fill="none" opacity=".4"/>
+        </svg>
+      </div>
+      <div class="hero-inner">
+        <div>
+          <span class="hero-kicker">布拉格 · 布尔诺 · 克鲁姆洛夫 实景记录</span>
+          <h1 id="heroH1">捷克街头搭讪全集在线观看</h1>
+          <p class="hero-lead">按城市街区整理的实景街头互动片段：老城广场石板路、查理大桥东侧步道、瓦茨拉夫广场夜间人流。每段标注拍摄日期、镜头时长与对话完整度，<strong>2026 年 10 月场次已补齐 7 条</strong>，可直接按街区跳转。</p>
+          <div class="hero-cta">
+            <a class="btn btn-solid" href="/#featured">进入精选片段</a>
+            <a class="btn" href="/#channels">按街区筛选</a>
+          </div>
+          <div class="hero-stats">
+            <div><b>186</b><span>收录片段</span></div>
+            <div><b>9</b><span>城市街区</span></div>
+            <div><b>2026-10-31</b><span>最新拍摄日</span></div>
+            <div><b>5.1 小时</b><span>完整对话时长</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 320" role="img">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1c2b33"/>
+                <stop offset="1" stop-color="#3f6b63"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="420" height="320" rx="16" fill="url(#sky)"/>
+            <circle cx="320" cy="70" r="34" fill="#f2c66a" opacity=".85"/>
+            <g fill="#20343f">
+              <rect x="24" y="120" width="52" height="150"/>
+              <rect x="86" y="96" width="40" height="174"/>
+              <rect x="136" y="132" width="60" height="138"/>
+              <rect x="286" y="110" width="46" height="160"/>
+              <rect x="342" y="140" width="54" height="130"/>
+            </g>
+            <g fill="#f2c66a" opacity=".8">
+              <rect x="36" y="136" width="10" height="14"/><rect x="54" y="136" width="10" height="14"/>
+              <rect x="36" y="164" width="10" height="14"/><rect x="54" y="164" width="10" height="14"/>
+              <rect x="96" y="116" width="9" height="12"/><rect x="112" y="116" width="9" height="12"/>
+              <rect x="96" y="146" width="9" height="12"/><rect x="112" y="146" width="9" height="12"/>
+              <rect x="298" y="128" width="9" height="12"/><rect x="314" y="128" width="9" height="12"/>
+              <rect x="298" y="158" width="9" height="12"/><rect x="314" y="158" width="9" height="12"/>
+            </g>
+            <path d="M136 270 L196 270 L206 320 L126 320 Z" fill="#2f4858"/>
+            <path d="M30 268 H392" stroke="#c8792f" stroke-width="4"/>
+            <g>
+              <circle cx="196" cy="226" r="12" fill="#f6f2ea"/>
+              <path d="M184 240 q12 18 24 0 l-4 32 h-16 Z" fill="#c8792f"/>
+              <rect x="192" y="272" width="4" height="18" fill="#f6f2ea"/>
+              <rect x="202" y="272" width="4" height="18" fill="#f6f2ea"/>
+              <path d="M206 228 l40 -14" stroke="#f6f2ea" stroke-width="4" stroke-linecap="round"/>
+            </g>
+            <g>
+              <circle cx="266" cy="236" r="11" fill="#f6f2ea"/>
+              <path d="M255 250 q11 16 22 0 l-4 30 h-14 Z" fill="#3f6b63"/>
+            </g>
+            <rect x="148" y="292" width="120" height="5" rx="2.5" fill="#f2c66a" opacity=".5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="portal-grid">
+      <!-- 左栏：频道导航 -->
+      <aside class="left-col">
+        <div class="side-card side-sticky side-nav">
+          <h3>街区与栏目</h3>
+          <ul id="sideNavList">
+            <li><a href="/#overview">街区概览</a></li>
+            <li><a href="/#featured">精选片段</a></li>
+            <li><a href="/#latest">更新清单</a></li>
+            <li><a href="/#channels">分类入口</a></li>
+            <li><a href="/#deep">深度解析</a></li>
+            <li><a href="/#guide">观看指南</a></li>
+            <li><a href="/#faq">常见问题</a></li>
+            <li><a href="/#comment">观众反馈</a></li>
+            <li><a href="/#news">相关资讯</a></li>
+            <li><a href="/#rank">口碑榜</a></li>
+            <li><a href="/#rec">相关推荐</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- 中栏：主内容 -->
+      <div class="center-col">
+
+        <!-- 领域概览 -->
+        <section class="block" id="overview" aria-labelledby="ovTitle">
+          <div class="block-head">
+            <h2 id="ovTitle">街区概览：九个取景片区</h2>
+            <p>数据统计截止 2026-11-06</p>
+          </div>
+          <p>布拉格老城区贡献了全库 41% 的片段，查理大桥东侧步道与瓦茨拉夫广场国家博物馆台阶两个点位合计 63 条，是拍摄密度最高的地方。布尔诺自由广场、克鲁姆洛夫中心广场属于 2026 年新加入的片区，镜头数量少但对话平均时长更长，普遍在 6 分钟以上。</p>
+          <div class="overview-grid">
+            <div class="ov-card">
+              <div class="num">63</div>
+              <h3>布拉格 · 瓦茨拉夫广场</h3>
+              <p>以国家博物馆台阶、马术雕像周边为主。18:00—21:00 人流最密，对话多被打断，完整段落偏少。</p>
+            </div>
+            <div class="ov-card">
+              <div class="num">47</div>
+              <h3>布拉格 · 查理大桥东侧</h3>
+              <p>清晨 7 点前的步道镜头最多，背景是伏尔塔瓦河与桥塔，噪音低，收音质量在整库中最好。</p>
+            </div>
+            <div class="ov-card">
+              <div class="num">31</div>
+              <h3>布拉格 · 老城广场</h3>
+              <p>天文钟整点前后人流量陡增，片段普遍在 2 分钟内，多为短问候与指路式对白。</p>
+            </div>
+            <div class="ov-card">
+              <div class="num">18</div>
+              <h3>布尔诺 · 自由广场</h3>
+              <p>2026 年 9 月起收录，广场四周咖啡座多，受访者停留意愿较高，10 月场次平均对话 7 分 20 秒。</p>
+            </div>
+            <div class="ov-card">
+              <div class="num">15</div>
+              <h3>克鲁姆洛夫 · 中心广场</h3>
+              <p>游客占比超过八成，俄语、德语、韩语对话各占一定比例，捷克语本土对话仅 4 条。</p>
+            </div>
+            <div class="ov-card">
+              <div class="num">12</div>
+              <h3>布拉格 · 小城区聂鲁达街</h3>
+              <p>街道窄，镜头多为贴近拍摄，画面内背景信息少，适合音频优先的观看方式。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 精选内容推荐 -->
+        <section class="block" id="featured" aria-labelledby="ftTitle">
+          <div class="block-head">
+            <h2 id="ftTitle">精选片段：六条优先看</h2>
+            <p>按对话完整度与画面稳定度挑选</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <img src="https://picsum.photos/seed/prague-charles-bridge/640/360" width="640" height="360" loading="lazy" alt="查理大桥东侧清晨步道，桥塔与河面晨雾">
+              <div class="body">
+                <h3>查理大桥清晨 7 点：指路开场后聊了 9 分钟</h3>
+                <p>受访者是布拉格本地书店店员，从问路聊到 1990 年代桥上的旧书摊。全程无剪辑，环境音只有河水和电车。</p>
+                <div class="meta"><span>2026-10-24</span><span>时长 9:12</span><span>对话完整</span></div>
+              </div>
+            </article>
+            <article class="feature-card">
+              <img src="https://picsum.photos/seed/wenceslas-square-night/640/360" width="640" height="360" loading="lazy" alt="瓦茨拉夫广场夜间国家博物馆台阶前人群">
+              <div class="body">
+                <h3>瓦茨拉夫广场夜场：三次被打断的完整记录</h3>
+                <p>19:40 开始，中途有巡警经过、朋友打招呼、电车鸣笛各一次。剪辑保留全部中断，并把打断前后的对话单独标了时间点。</p>
+                <div class="meta"><span>2026-10-19</span><span>时长 12:06</span><span>含中断标记</span></div>
+              </div>
+            </article>
+            <article class="feature-card">
+              <img src="https://picsum.photos/seed/brno-square-autumn/640/360" width="640" height="360" loading="lazy" alt="布尔诺自由广场秋季午后咖啡座与电车轨道">
+              <div class="body">
+                <h3>布尔诺自由广场：咖啡座旁的 11 分钟长谈</h3>
+                <p>受访者为马萨里克大学交换生，话题从城市差异延伸到捷克的周末习惯。是整库目前最长的单段对话。</p>
+                <div class="meta"><span>2026-10-19</span><span>时长 11:38</span><span>本库最长</span></div>
+              </div>
+            </article>
+            <article class="feature-card">
+              <img src="https://picsum.photos/seed/old-town-clock/640/360" width="640" height="360" loading="lazy" alt="老城广场天文钟整点前聚集的游客">
+              <div class="body">
+                <h3>老城广场天文钟整点：2 分 40 秒的短问候合集</h3>
+                <p>把同一小时内 6 段短对话拼成一条，标注每次被钟声打断的位置，适合观察人流对对话节奏的影响。</p>
+                <div class="meta"><span>2026-10-27</span><span>时长 2:40</span><span>合集形式</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 最新更新 -->
+        <section class="block" id="latest" aria-labelledby="ltTitle">
+          <div class="block-head">
+            <h2 id="ltTitle">更新清单：10 月 12 日至 11 月 6 日</h2>
+            <p>按上传时间倒序</p>
+          </div>
+          <ul class="tight-list">
+            <li><time datetime="2026-11-06">11-06</time><a href="/#featured">布尔诺自由广场傍晚场 12 分钟对话</a><span class="kind">新增</span></li>
+            <li><time datetime="2026-11-04">11-04</time><a href="/#deep">瓦茨拉夫广场夜场时间轴逐条校对</a><span class="kind">修订</span></li>
+            <li><time datetime="2026-11-01">11-01</time><a href="/#guide">新增“按对话完整度排序”筛选说明</a><span class="kind">功能说明</span></li>
+            <li><time datetime="2026-10-29">10-29</time><a href="/#channels">克鲁姆洛夫中心广场 4 条短片入库</a><span class="kind">新增</span></li>
+            <li><time datetime="2026-10-27">10-27</time><a href="/#featured">老城广场天文钟短问候合集</a><span class="kind">新增</span></li>
+            <li><time datetime="2026-10-24">10-24</time><a href="/#featured">查理大桥清晨 9 分钟完整版</a><span class="kind">新增</span></li>
+            <li><time datetime="2026-10-19">10-19</time><a href="/#comment">回填 3 条观众对收音质量的指正</a><span class="kind">更正</span></li>
+            <li><time datetime="2026-10-14">10-14</time><a href="/#rank">口碑榜加入“对话长度”权重</a><span class="kind">规则调整</span></li>
+          </ul>
+        </section>
+
+        <!-- 分类入口 -->
+        <section class="block" id="channels" aria-labelledby="chTitle">
+          <div class="block-head">
+            <h2 id="chTitle">分类入口：按城市、年份、完整度</h2>
+          </div>
+          <div class="cat-grid">
+            <a class="cat-item" href="/#overview"><b>布拉格老城广场搭讪片段</b><span>31 条 · 2024—2026</span></a>
+            <a class="cat-item" href="/#overview"><b>查理大桥清晨搭讪实录</b><span>47 条 · 收音优先</span></a>
+            <a class="cat-item" href="/#overview"><b>瓦茨拉夫广场夜间对话</b><span>63 条 · 含中断</span></a>
+            <a class="cat-item" href="/#overview"><b>布尔诺自由广场长谈</b><span>18 条 · 6 分钟以上</span></a>
+            <a class="cat-item" href="/#overview"><b>克鲁姆洛夫游客区短问候</b><span>15 条 · 多语种</span></a>
+            <a class="cat-item" href="/#featured"><b>2026 年 10 月场次</b><span>29 条 · 最新</span></a>
+            <a class="cat-item" href="/#featured"><b>2025 年冬季场次</b><span>22 条 · 雪景</span></a>
+            <a class="cat-item" href="/#guide"><b>对话完整度 A 级片段</b><span>54 条 · 无删减</span></a>
+          </div>
+        </section>
+
+        <!-- 深度解析 -->
+        <section class="block" id="deep" aria-labelledby="dpTitle">
+          <div class="block-head">
+            <h2 id="dpTitle">深度解析：为什么 10 月场次比 7 月更耐看</h2>
+          </div>
+          <div class="reading">
+            <p class="judgment">把 186 条片段按拍摄月份切开，10 月的平均对话时长是 5 分 40 秒，7 月只有 3 分 10 秒。差距主要来自人流密度与受访者停留意愿，而不是拍摄技巧的进步。</p>
+
+            <h3>一、两组数字的直接对比</h3>
+            <p>按库里自带的时长标记统计：7 月 12 日至 31 日共 38 条，平均 3 分 10 秒；10 月 3 日至 31 日共 29 条，平均 5 分 40 秒。超过 6 分钟的片段，7 月只有 3 条，10 月有 14 条。这个差距比镜头稳定度评分的变化大得多——同期的稳定度评分只从 3.8 升到 4.0。</p>
+            <table class="compare">
+              <caption style="text-align:left;font-size:13px;color:#41545d;padding-bottom:6px;">表：7 月与 10 月场次时长分布（片段数）</caption>
+              <thead><tr><th>时长区间</th><th>7 月</th><th>10 月</th></tr></thead>
+              <tbody>
+                <tr><td>2 分钟以内</td><td>19</td><td>4</td></tr>
+                <tr><td>2—6 分钟</td><td>16</td><td>11</td></tr>
+                <tr><td>6 分钟以上</td><td>3</td><td>14</td></tr>
+              </tbody>
+            </table>
+            <p>7 月 2 分钟以内占了一半，原因是老城广场整点钟声、旅游团旗子、日晒都让对话很快结束。10 月日落后广场灯光亮起，游客更愿意站着聊天，6 分钟以上的片段因此翻了几倍。</p>
+
+            <h3>二、一次被反复引用的说法</h3>
+            <p>10 月 19 日布尔诺自由广场那段 11 分 38 秒的对话，被不少观众当作“夜晚更容易搭话”的证据。这里要拆开：<strong>事实</strong>是这段发生在 18:50 之后；<strong>回应</strong>是拍摄者在片段说明里注明受访者本来就在等朋友、有 20 分钟空闲；<strong>推测</strong>才是“夜里广场人少更好开口”。三点混在一起，结论就不可靠了。</p>
+            <div class="panel-pair">
+              <div class="panel fact"><h4>可以核对的</h4><p>片段 2026-10-19 18:52 开拍，19:04 结束，原始文件 11:38 无剪辑。同行者 2 人，现场咖啡座营业中。</p></div>
+              <div class="panel claim"><h4>属于转述与推测</h4><p>“布尔诺人比布拉格人更愿意聊”是拍摄者在评论区的一句转述，无样本量说明；“夜里更好开口”是观众推测，没有对照场次。</p></div>
+            </div>
+
+            <h3>三、录音质量比画质更决定能不能看完</h3>
+            <p>把 54 条 A 级片段与 32 条 C 级片段对照，A 级几乎全部使用领夹麦或近距离指向麦，C 级里有 21 条是机身内置麦。观众评论里提到“听不清”的条目共 17 条，全部落在 C 级。查理大桥东侧清晨之所以稳定出 A 级，是因为环境噪音在 55 分贝以下，画面反而次要。</p>
+
+            <h3>四、近期的时间线</h3>
+            <ul class="timeline">
+              <li><time datetime="2026-10-03">10-03</time>布拉格老城广场秋季场次开拍，首日 4 条，均不足 3 分钟。</li>
+              <li><time datetime="2026-10-19">10-19</time>布尔诺自由广场出现本库最长单段对话，11:38。</li>
+              <li><time datetime="2026-10-24">10-24</time>查理大桥清晨场改领夹麦，收音评分从 3.9 升到 4.6。</li>
+              <li><time datetime="2026-10-31">10-31</time>瓦茨拉夫广场夜场完成第四次补拍，进入后期校对。</li>
+              <li><time datetime="2026-11-04">11-04</time>夜场时间轴逐条校对完成，修正 3 处时间标记。</li>
+            </ul>
+
+            <h3>五、这条判断可以被怎么反驳</h3>
+            <p>最直接的反驳是样本偏差：10 月场次由同一位拍摄者集中完成，他本来就更偏向挑愿意聊的人。要检验，可以等 2026 年 12 月冬季场数据——如果冬季平均时长仍然高于 6 分钟，人流密度解释就更站得住；如果掉回 3 分钟附近，说明决定因素是拍摄者的筛选方式。这条对照已经列入 11 月的更新计划。</p>
+          </div>
+        </section>
+
+        <!-- 体验指南 -->
+        <section class="block" id="guide" aria-labelledby="gdTitle">
+          <div class="block-head">
+            <h2 id="gdTitle">观看指南：五步找到想看的段落</h2>
+          </div>
+          <ol class="steps">
+            <li><h4>先定街区</h4><p>想看画面优先选查理大桥东侧，想听长对话选布尔诺自由广场。瓦茨拉夫广场夜场 interruptions 多，适合看节奏。</p></li>
+            <li><h4>再用完整度筛选</h4><p>A 级为无删减，B 级有一次中断，C 级为多段拼接。C 级适合快速浏览，不适合引用原话。</p></li>
+            <li><h4>核对拍摄日期</h4><p>2026 年 10 月场次普遍收音更好；2025 年冬季场有雪景，但内置麦比例高，听感差一档。</p></li>
+            <li><h4>看时间标记</h4><p>夜场片段的中断点都标了分秒，拖动到标记前 10 秒，能听清被打断前的一句话。</p></li>
+            <li><h4>最后读说明栏</h4><p>说明栏写受访者背景与是否获准拍摄。没有说明的条目一律按示例资料看待。</p></li>
+          </ol>
+        </section>
+      </div>
+
+      <!-- 右栏：侧栏 -->
+      <aside class="right-col">
+        <div class="side-card" style="margin-bottom:var(--sp-4);">
+          <h3>本周期热看</h3>
+          <ul class="tight-list" style="border-top:none;">
+            <li><time datetime="2026-10-24">10-24</time><a href="/#featured">查理大桥清晨 9 分钟</a><span class="kind">A 级</span></li>
+            <li><time datetime="2026-10-19">10-19</time><a href="/#featured">布尔诺自由广场长谈</a><span class="kind">11:38</span></li>
+            <li><time datetime="2026-10-19">10-19</time><a href="/#featured">瓦茨拉夫广场夜场</a><span class="kind">含中断</span></li>
+            <li><time datetime="2026-10-27">10-27</time><a href="/#featured">天文钟整点合集</a><span class="kind">短问候</span></li>
+          </ul>
+        </div>
+        <div class="side-card" style="margin-bottom:var(--sp-4);">
+          <h3>采集现场提示</h3>
+          <p style="font-size:var(--fs-s);color:var(--ink-soft);margin:0;">布拉格老城广场 10 月下旬日落约在 17:40，18:00 后广场灯光打开，画面偏暖；查理大桥清晨 6:30 前几乎没有游客，桥面石板反光会影响曝光。</p>
+        </div>
+        <div class="side-card">
+          <h3>街区片数占比</h3>
+          <ul style="list-style:none;padding:0;margin:0;font-size:var(--fs-s);">
+            <li style="margin-bottom:8px;">瓦茨拉夫广场 63 条<div class="bar"><i style="width:100%"></i></div></li>
+            <li style="margin-bottom:8px;">查理大桥东侧 47 条<div class="bar"><i style="width:75%"></i></div></li>
+            <li style="margin-bottom:8px;">老城广场 31 条<div class="bar"><i style="width:49%"></i></div></li>
+            <li>布尔诺自由广场 18 条<div class="bar"><i style="width:29%"></i></div></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FAQ -->
+    <section class="block" id="faq" aria-labelledby="fqTitle">
+      <div class="block-head">
+        <h2 id="fqTitle">常见问题</h2>
+      </div>
+      <details class="faq">
+        <summary>查理大桥东侧步道的片段为什么大多在清晨？</summary>
+        <div class="ans">桥面 7 点后游客密度迅速上升，背景人声盖过对话，领夹麦也收不干净。清晨 6:00—7:00 环境噪音在 50 分贝上下，伏尔塔瓦河的水声反而成了低频底噪。2026 年 10 月的 11 条 A 级片段里，9 条拍于这个时段。</div>
+      </details>
+      <details class="faq">
+        <summary>瓦茨拉夫广场夜场的中断标记怎么用？</summary>
+        <div class="ans">每条夜场片段在说明栏列出中断发生的分秒，例如 03:12 巡警经过、07:45 朋友打招呼。拖动到标记前 10 秒，能听到被打断前的整句。中断本身保留在画面里，没有剪掉。</div>
+      </details>
+      <details class="faq">
+        <summary>布尔诺自由广场的对话为什么普遍更长？</summary>
+        <div class="ans">广场四周有固定咖啡座，受访者通常本来就在等人或休息，空闲时间在 15 分钟以上。10 月 19 日那段 11:38 的对话，受访者在片段说明里写明有 20 分钟空闲，这是时长的主要来源，不是“布尔诺人更健谈”这类笼统原因。</div>
+      </details>
+      <details class="faq">
+        <summary>老城广场天文钟整点的短问候合集算完整片段吗？</summary>
+        <div class="ans">不算。合集由 6 段 20 秒到 40 秒的独立对白拼接，标注为 C 级。它适合观察钟声和人流怎样切断对话，但不能当作单段实录引用。</div>
+      </details>
+      <details class="faq">
+        <summary>2025 年冬季场和 2026 年 10 月场的收音差距有多大？</summary>
+        <div class="ans">冬季场 22 条里有 13 条使用机身内置麦，风噪明显；10 月场改用领夹麦后，收音评分从 3.9 提到 4.6。用耳机听差别最清楚，外放时差距会被环境音抵消。</div>
+      </details>
+      <details class="faq">
+        <summary>片段里的受访者都同意被拍摄吗？</summary>
+        <div class="ans">库里 A 级片段在说明栏均注明已获准拍摄，B、C 级中有一部分为事后沟通补录授权。说明栏没有写明授权的条目，按示例资料处理，不作为事实来源引用。</div>
+      </details>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="block" id="comment" aria-labelledby="cmTitle">
+      <div class="block-head">
+        <h2 id="cmTitle">观众反馈：十五条里有六条在挑毛病</h2>
+        <p>2026-10-14 至 2026-11-05 的留言摘选</p>
+      </div>
+      <div class="comments">
+        <article class="comment">
+          <p>查理大桥那条 9:12 的，第 4 分钟开始有电车经过，本来以为会断，结果领夹麦几乎没收到，收音确实做得好。</p>
+          <div class="who"><span>@伏尔塔瓦的雾</span><span class="stars">★★★★★</span></div>
+        </article>
+        <article class="comment crit">
+          <p>瓦茨拉夫广场夜场标了三次中断，但我数到五次，02:31 那次巡警从画面右侧走过没标，07:45 之后的自行车铃声也没算进去。时间轴校对还有遗漏。</p>
+          <div class="who"><span>@夜班电车</span><span class="stars">★★★☆☆</span></div>
+        </article>
+        <article class="comment neutral">
+          <p>布尔诺那段 11 分 38 秒，前面 6 分钟聊得挺自然，后面一直在等受访者的朋友出现，节奏拖了。长不等于好。</p>
+          <div class="who"><span>@马萨里克旧生</span><span class="stars">★★★☆☆</span></div>
+        </article>
+        <article class="comment">
+          <p>老城广场天文钟合集挺有意思，能看出钟声响的那 40 秒里对话基本停了，这个观察比单段实录直观。</p>
+          <div class="who"><span>@钟楼下第三根柱子</span><span class="stars">★★★★☆</span></div>
+        </article>
+        <article class="comment crit">
+          <p>克鲁姆洛夫那 4 条几乎全是游客，捷克语只有 1 条，标题写“街头搭讪”有点名不副实。想看本土对话的可以跳过这个街区。</p>
+          <div class="who"><span>@克鲁姆洛夫过客</span><span class="stars">★★☆☆☆</span></div>
+        </article>
+        <article class="comment neutral">
+          <p>指南里说 C 级不适合引用原话，这点同意。但 A 级里有两条受访者后来要求删掉某句，库里只是打了星号，没说明原因。</p>
+          <div class="who"><span>@存档管理员</span><span class="stars">★★★☆☆</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="block" id="news" aria-labelledby="nwTitle">
+      <div class="block-head">
+        <h2 id="nwTitle">相关资讯</h2>
+      </div>
+      <ul class="tight-list">
+        <li><time datetime="2026-11-05">11-05</time><a href="/#deep">布拉格老城广场 11 月起进入圣诞市集搭建期，广场东侧围挡到 11 月 20 日</a><span class="kind">现场</span></li>
+        <li><time datetime="2026-11-02">11-02</time><a href="/#guide">领夹麦在 5℃ 以下电池衰减明显，冬季场收音评分预计回落 0.3</a><span class="kind">设备</span></li>
+        <li><time datetime="2026-10-30">10-30</time><a href="/#overview">布尔诺自由广场咖啡座 11 月起改为冬季营业时间，18:00 收摊</a><span class="kind">街区</span></li>
+        <li><time datetime="2026-10-22">10-22</time><a href="/#faq">查理大桥 11 月起清晨 6 点前禁止商拍，个人记录不受影响</a><span class="kind">规则</span></li>
+      </ul>
+    </section>
+
+    <!-- 口碑榜 -->
+    <section class="block" id="rank" aria-labelledby="rkTitle">
+      <div class="block-head">
+        <h2 id="rkTitle">口碑榜：按对话长度与收音加权</h2>
+        <p>权重：时长 40%、收音 40%、画面 20%</p>
+      </div>
+      <ol class="rank">
+        <li><span class="no">01</span><div><b>布尔诺自由广场 2026-10-19 长谈</b><div class="bar"><i style="width:96%"></i></div></div><span class="score">9.6</span></li>
+        <li><span class="no">02</span><div><b>查理大桥清晨 2026-10-24 完整版</b><div class="bar"><i style="width:93%"></i></div></div><span class="score">9.3</span></li>
+        <li><span class="no">03</span><div><b>瓦茨拉夫广场夜场 2026-10-19</b><div class="bar"><i style="width:86%"></i></div></div><span class="score">8.6</span></li>
+        <li><span class="no">04</span><div><b>小城区聂鲁达街 2026-10-15 音频优先版</b><div class="bar"><i style="width:78%"></i></div></div><span class="score">7.8</span></li>
+        <li><span class="no">05</span><div><b>老城广场天文钟整点合集</b><div class="bar"><i style="width:64%"></i></div></div><span class="score">6.4</span></li>
+      </ol>
+      <div class="quote-card" style="margin-top:var(--sp-4);">
+        <p>“桥面 6 点半以前，连卖烤面包的摊子都还没开。那 9 分钟里只有河水，和受访者说到旧书摊时抬手指了一下桥塔。”</p>
+        <div class="by">—— 拍摄者手记，2026-10-24，查理大桥东侧</div>
+      </div>
+    </section>
+
+    <!-- 相关推荐 -->
+    <section class="block" id="rec" aria-labelledby="rcTitle">
+      <div class="block-head">
+        <h2 id="rcTitle">相关推荐</h2>
+      </div>
+      <div class="rec-tags">
+        <a href="/#featured">布拉格老城广场搭讪片段</a>
+        <a href="/#featured">查理大桥清晨实录</a>
+        <a href="/#featured">瓦茨拉夫广场夜场中断标记</a>
+        <a href="/#featured">布尔诺自由广场长谈</a>
+        <a href="/#channels">克鲁姆洛夫游客区短问候</a>
+        <a href="/#guide">对话完整度 A 级筛选</a>
+        <a href="/#guide">2026 年 10 月场次</a>
+        <a href="/#deep">时长与收音对照表</a>
+        <a href="/#faq">领夹麦与内置麦差别</a>
+      </div>
+    </section>
+
+    <!-- 补充：可信度分层 -->
+    <section class="block" id="cred" aria-labelledby="crTitle">
+      <div class="block-head">
+        <h2 id="crTitle">信息可信度分层：哪些能引用</h2>
+      </div>
+      <table class="check-table">
+        <thead><tr><th>条目</th><th>层级</th><th>核对要点</th></tr></thead>
+        <tbody>
+          <tr><td>片段拍摄日期与时长</td><td class="state-ok">可核对</td><td>原始文件元数据、说明栏一致</td></tr>
+          <tr><td>受访者身份与职业</td><td class="state-wait">部分可核对</td><td>仅 A 级片段附本人确认</td></tr>
+          <tr><td>授权情况</td><td class="state-wait">部分可核对</td><td>B、C 级为事后补录</td></tr>
+          <tr><td>“某城市更易搭话”类判断</td><td class="state-no">不作事实</td><td>缺样本量与对照场次</td></tr>
+          <tr><td>收音评分</td><td class="state-ok">可核对</td><td>按设备型号与噪音值折算</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="foot-wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <svg viewBox="0 0 64 64" role="img" aria-label="站点标志">
+          <rect width="64" height="64" rx="14" fill="#20343f"/>
+          <path d="M12 46 L24 20 L30 32 L38 14 L52 46 Z" fill="#3f6b63"/>
+          <path d="M22 46 L32 26 L42 46 Z" fill="#f2c66a"/>
+        </svg>
+        <b>捷克街头搭讪全集在线观看</b>
+        <p>按城市街区与拍摄日期整理的实景互动片段档案，每条标注时长、完整度与收音评级，便于按需定位。</p>
+      </div>
+      <div>
+        <h4>街区分类</h4>
+        <ul>
+          <li><a href="/#overview">布拉格老城广场</a></li>
+          <li><a href="/#overview">查理大桥东侧</a></li>
+          <li><a href="/#overview">瓦茨拉夫广场</a></li>
+          <li><a href="/#overview">布尔诺自由广场</a></li>
+          <li><a href="/#overview">克鲁姆洛夫中心广场</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="/#featured">精选片段</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观看指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#rank">口碑榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <ul>
+          <li><a href="/#cred">可信度分层</a></li>
+          <li><a href="/#latest">更新清单</a></li>
+          <li><a href="/#comment">观众反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p><strong>示例数据说明：</strong>页面内街区片数、时长、评分均为按垂类特征生成的示例条目；拍摄日期落在 2026-10-09 至 2026-11-08 之间，实际内容以原始记录为准。</p>
+      <p>页脚更新时间 2026-11-06，对应正文“更新清单”中 11-06 布尔诺自由广场傍晚场新增条目。</p>
+      <p>© 2026 街角档案 · 内容仅供观看与讨论参考</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var headNav=document.getElementById('headNav');
+  if(menuBtn&&headNav){
+    menuBtn.addEventListener('click',function(){
+      var open=headNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    headNav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=760){
+        headNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>420){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  // 侧栏滚动高亮
+  var links=Array.prototype.slice.call(document.querySelectorAll('#sideNavList a'));
+  var targets=links.map(function(a){
+    var id=a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos=window.scrollY+140;
+    var current=0;
+    targets.forEach(function(t,i){
+      if(t&&t.offsetTop<=pos){current=i;}
+    });
+    links.forEach(function(a,i){
+      a.classList.toggle('active',i===current);
+    });
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  // 本地搜索
+  var input=document.getElementById('searchInput');
+  var feedback=document.getElementById('searchFeedback');
+  var index=[
+    {t:'布拉格老城广场搭讪片段',h:'/#overview'},
+    {t:'查理大桥清晨搭讪实录',h:'/#featured'},
+    {t:'瓦茨拉夫广场夜间对话',h:'/#featured'},
+    {t:'布尔诺自由广场长谈',h:'/#featured'},
+    {t:'克鲁姆洛夫游客区短问候',h:'/#channels'},
+    {t:'老城广场天文钟整点合集',h:'/#featured'},
+    {t:'2026 年 10 月场次',h:'/#channels'},
+    {t:'对话完整度 A 级片段',h:'/#guide'},
+    {t:'时长与收音对照表',h:'/#deep'},
+    {t:'信息可信度分层',h:'/#cred'},
+    {t:'口碑榜',h:'/#rank'},
+    {t:'常见问题',h:'/#faq'}
+  ];
+  function render(q){
+    if(!q){feedback.classList.remove('show');feedback.innerHTML='';return;}
+    var hit=index.filter(function(item){return item.t.indexOf(q)>-1;});
+    if(hit.length===0){
+      feedback.innerHTML='<p style="margin:0;color:#8c3b2e;">没有找到与“'+q.replace(/[<>&]/g,'')+'”匹配的片段，试试“老城广场”“查理大桥”“10 月场次”。</p>';
+    }else{
+      feedback.innerHTML='<ul>'+hit.slice(0,6).map(function(item){
+        return '<li><a href="'+item.h+'">'+item.t+'</a></li>';
+      }).join('')+'</ul>';
+    }
+    feedback.classList.add('show');
+  }
+  input.addEventListener('input',function(){render(input.value.trim());});
+  input.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){render(input.value.trim());}
+    if(e.key==='Escape'){feedback.classList.remove('show');}
+  });
+  document.addEventListener('click',function(e){
+    if(!feedback.contains(e.target)&&e.target!==input){feedback.classList.remove('show');}
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"捷克街头搭讪全集在线观看",
+  "inLanguage":"zh-CN",
+  "description":"按城市街区整理的捷克街头实景互动片段合集，标注拍摄日期、时长与对话完整度。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"查理大桥东侧步道的片段为什么大多在清晨？","acceptedAnswer":{"@type":"Answer","text":"桥面 7 点后游客密度迅速上升，背景人声盖过对话。清晨 6:00—7:00 环境噪音在 50 分贝上下，2026 年 10 月的 11 条 A 级片段里 9 条拍于这个时段。"}},
+    {"@type":"Question","name":"瓦茨拉夫广场夜场的中断标记怎么用？","acceptedAnswer":{"@type":"Answer","text":"每条夜场片段在说明栏列出中断发生的分秒，拖动到标记前 10 秒能听到被打断前的整句，中断本身保留在画面里。"}},
+    {"@type":"Question","name":"布尔诺自由广场的对话为什么普遍更长？","acceptedAnswer":{"@type":"Answer","text":"广场四周有固定咖啡座，受访者通常本来就在等人或休息，空闲时间在 15 分钟以上。10 月 19 日那段 11:38 的对话，受访者写明有 20 分钟空闲。"}},
+    {"@type":"Question","name":"老城广场天文钟整点的短问候合集算完整片段吗？","acceptedAnswer":{"@type":"Answer","text":"不算。合集由 6 段 20 秒到 40 秒的独立对白拼接，标注为 C 级，适合观察钟声和人流怎样切断对话。"}},
+    {"@type":"Question","name":"2025 年冬季场和 2026 年 10 月场的收音差距有多大？","acceptedAnswer":{"@type":"Answer","text":"冬季场 22 条里有 13 条使用机身内置麦，风噪明显；10 月场改用领夹麦后收音评分从 3.9 提到 4.6。"}},
+    {"@type":"Question","name":"片段里的受访者都同意被拍摄吗？","acceptedAnswer":{"@type":"Answer","text":"A 级片段在说明栏均注明已获准拍摄，B、C 级中有一部分为事后沟通补录授权。没有写明授权的条目按示例资料处理。"}}
+  ]
+}
+</script>
+</body>
+  </html>
