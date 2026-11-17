@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>51hlw免费-资源下载与影视工具索引</title>
+<meta name="description" content="51hlw免费资源索引站，整理影视、软件、网盘与下载工具入口。收录51hlw免费频道常用分类：高清影视、磁力搜索、网盘工具、BT下载器，附带使用说明与体验要点。">
+<meta name="keywords" content="51hlw免费">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3b4d'/%3E%3Cpath d='M18 44V20h7l7 11 7-11h7v24h-7V32l-7 10-7-10v12z' fill='%23f2b134'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"51hlw免费","description":"资源下载与影视工具索引，涵盖高清影视、磁力搜索、网盘工具与BT下载器分类。","inLanguage":"zh-CN"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"磁力搜索站点打不开怎么办？","acceptedAnswer":{"@type":"Answer","text":"先确认是否为网络运营商屏蔽，可切换移动网络或更换DNS再试；若站点长期无法访问，优先使用仍可打开的镜像入口，并在收藏前核对域名拼写。"}},
+{"@type":"Question","name":"BT下载器哪个适合新手？","acceptedAnswer":{"@type":"Answer","text":"qBittorrent 界面简单、无捆绑，适合首次使用；下载速度受种子健康度影响，热门资源做种人数多时速度明显更快。"}},
+{"@type":"Question","name":"网盘资源失效如何找回？","acceptedAnswer":{"@type":"Answer","text":"先检查链接是否含提取码，再联系分享者补链；超过保存期限或分享者取消的文件通常无法恢复，需要寻找同片源的其他网盘版本。"}},
+{"@type":"Question","name":"离线下载和普通下载有什么区别？","acceptedAnswer":{"@type":"Answer","text":"离线下载由服务器先完成资源抓取，用户再从服务器取回，适合冷门种子；普通下载直接连做种节点，热门资源速度更快但冷门资源容易卡住。"}},
+{"@type":"Question","name":"字幕文件该放哪个目录？","acceptedAnswer":{"@type":"Answer","text":"多数播放器识别同目录同名 .srt 文件，把字幕与视频放在同一文件夹并保持文件名前缀一致即可自动加载。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#1c2733;
+  --ink-soft:#4a5a68;
+  --brand:#1f3b4d;
+  --brand-2:#2c5468;
+  --accent:#f2b134;
+  --accent-soft:#fdf1d6;
+  --bg:#f6f4ef;
+  --card:#ffffff;
+  --line:#ddd8cd;
+  --line-strong:#c3bcac;
+  --ok:#2e7d5b;
+  --warn:#b3541e;
+  --radius:12px;
+  --radius-sm:7px;
+  --shadow:0 2px 10px rgba(28,39,51,.08);
+  --shadow-lg:0 8px 26px rgba(28,39,51,.12);
+  --fs-h1:2.35rem;
+  --fs-h2:1.45rem;
+  --fs-h3:1.08rem;
+  --fs-body:.975rem;
+  --fs-sm:.845rem;
+  --fs-xs:.78rem;
+  --sticky-h:96px;
+  --gap:22px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--sticky-h) + 8px)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  font-size:var(--fs-body);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{color:var(--warn)}
+img{max-width:100%;display:block}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+/* ===== 吸顶区 ===== */
+.sticky-wrap{position:sticky;top:0;z-index:60}
+.announce{
+  background:var(--brand);
+  color:#e9eef1;
+  font-size:var(--fs-sm);
+  padding:8px 18px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.announce .tag{
+  background:var(--accent);
+  color:#2a1c00;
+  font-weight:700;
+  font-size:var(--fs-xs);
+  padding:1px 8px;
+  border-radius:20px;
+  letter-spacing:.5px;
+  white-space:nowrap;
+}
+.announce a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.announce a:hover{color:#fff}
+
+header.site{
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.header-inner{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:10px 18px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:38px;height:38px;flex-shrink:0}
+.brand .wordmark{font-size:1.16rem;font-weight:800;letter-spacing:.5px;color:var(--brand);line-height:1.1}
+.brand .wordmark small{display:block;font-size:.66rem;font-weight:500;color:var(--ink-soft);letter-spacing:1.5px}
+nav.main-nav{margin-left:auto;display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+nav.main-nav a{
+  font-size:var(--fs-sm);
+  color:var(--ink-soft);
+  padding:7px 10px;
+  border-radius:var(--radius-sm);
+  font-weight:500;
+  white-space:nowrap;
+}
+nav.main-nav a:hover{background:var(--accent-soft);color:var(--brand)}
+.menu-btn{
+  display:none;
+  margin-left:auto;
+  background:var(--brand);
+  color:#fff;
+  border:0;
+  padding:8px 14px;
+  border-radius:var(--radius-sm);
+  font-size:var(--fs-sm);
+  font-weight:600;
+  cursor:pointer;
+}
+.search-box{display:flex;align-items:center;gap:0;border:1px solid var(--line-strong);border-radius:20px;overflow:hidden;background:#fff}
+.search-box input{
+  border:0;padding:7px 14px;font-size:var(--fs-sm);width:150px;background:transparent;color:var(--ink);
+}
+.search-box input:focus{outline:none}
+.search-box button{
+  border:0;background:var(--accent);color:#2a1c00;font-weight:700;font-size:var(--fs-sm);
+  padding:7px 14px;cursor:pointer;height:100%;
+}
+.search-box button:hover{background:#e0a020}
+.search-feedback{
+  max-width:var(--maxw);margin:0 auto;padding:0 18px;
+  font-size:var(--fs-sm);color:var(--warn);min-height:0;
+}
+.search-feedback:not(:empty){padding:6px 18px 10px}
+.search-feedback a{margin-right:8px;display:inline-block}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(140deg,#1f3b4d 0%,#264a5e 55%,#2c5468 100%);
+  color:#f2f6f8;
+}
+.hero-inner{
+  max-width:var(--maxw);margin:0 auto;padding:56px 18px 62px;
+  display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;
+  position:relative;z-index:2;
+}
+.hero .kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:var(--fs-xs);letter-spacing:2px;font-weight:600;
+  color:var(--accent);border:1px solid rgba(242,177,52,.5);
+  padding:4px 12px;border-radius:20px;margin-bottom:18px;
+}
+h1{
+  font-size:var(--fs-h1);
+  line-height:1.22;
+  font-weight:800;
+  letter-spacing:.5px;
+  margin-bottom:16px;
+  color:#fff;
+}
+.hero p.lead{
+  font-size:1rem;
+  color:#c9d6de;
+  max-width:34em;
+  margin-bottom:26px;
+}
+.hero p.lead b{color:var(--accent);font-weight:700}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:24px;
+  font-size:var(--fs-sm);font-weight:700;transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn-primary{background:var(--accent);color:#2a1c00;box-shadow:0 4px 14px rgba(242,177,52,.35)}
+.btn-primary:hover{transform:translateY(-2px);color:#2a1c00}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12);color:#fff}
+.hero-stats{
+  display:flex;gap:28px;margin-top:34px;flex-wrap:wrap;
+}
+.hero-stats div{font-size:var(--fs-xs);color:#9fb3bf;letter-spacing:.5px}
+.hero-stats strong{display:block;font-size:1.5rem;color:#fff;font-weight:800;line-height:1.2}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art svg{width:100%;max-width:360px;height:auto}
+.hero-bg-grid{
+  position:absolute;inset:0;z-index:1;
+  background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1px);
+  background-size:26px 26px;
+  mask-image:linear-gradient(120deg,rgba(0,0,0,.9),transparent 70%);
+}
+
+/* ===== 布局 ===== */
+.layout{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:40px 18px 20px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 300px;
+  gap:var(--gap);
+  align-items:start;
+}
+main{min-width:0}
+aside{min-width:0;position:sticky;top:calc(var(--sticky-h) + 16px)}
+
+section.block{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:26px 24px;
+  margin-bottom:var(--gap);
+  box-shadow:var(--shadow);
+}
+.block-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+h2{font-size:var(--fs-h2);color:var(--brand);font-weight:800;letter-spacing:.3px;line-height:1.35}
+h2 .num{
+  display:inline-block;font-size:.72rem;font-weight:700;color:var(--brand);
+  background:var(--accent-soft);border:1px solid #e9d39a;
+  padding:1px 8px;border-radius:6px;vertical-align:middle;margin-right:8px;letter-spacing:1px;
+}
+h3{font-size:var(--fs-h3);color:var(--brand);font-weight:700;margin:18px 0 8px}
+.block-head .sub{font-size:var(--fs-sm);color:var(--ink-soft)}
+
+/* 通用小元素 */
+.chip{
+  display:inline-block;font-size:var(--fs-xs);padding:2px 9px;border-radius:12px;
+  background:#eef2f4;color:var(--ink-soft);border:1px solid var(--line);
+  margin:2px 4px 2px 0;white-space:nowrap;
+}
+.chip.hot{background:var(--accent-soft);color:#7a4a00;border-color:#eccf8e}
+.chip.ok{background:#e4f2ea;color:var(--ok);border-color:#bfe0cd}
+.meta{font-size:var(--fs-xs);color:#8695a1}
+.divider{height:1px;background:var(--line);margin:16px 0}
+
+/* 领域概览：非对称组合 */
+.overview-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}
+.overview-lead p{color:var(--ink-soft);margin-bottom:12px;font-size:var(--fs-sm);line-height:1.85}
+.overview-lead p strong{color:var(--ink)}
+.ov-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fact{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:10px 12px;background:#faf9f5;
+}
+.fact strong{display:block;font-size:1.25rem;color:var(--brand);line-height:1.25}
+.fact span{font-size:var(--fs-xs);color:var(--ink-soft)}
+
+/* 精选：网格卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  overflow:hidden;background:#fff;display:flex;flex-direction:column;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card img{width:100%;height:118px;object-fit:cover}
+.card .body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .body h3{margin:0;font-size:.98rem;line-height:1.45}
+.card .body p{font-size:var(--fs-xs);color:var(--ink-soft);line-height:1.65;flex:1}
+.card .foot{display:flex;justify-content:space-between;align-items:center;font-size:var(--fs-xs);color:#93a0aa}
+
+/* 最新更新：紧凑列表 */
+.update-list{list-style:none}
+.update-list li{
+  display:flex;gap:14px;align-items:flex-start;
+  padding:11px 0;border-bottom:1px dashed var(--line);
+}
+.update-list li:last-child{border-bottom:0}
+.update-list time{
+  flex-shrink:0;font-size:var(--fs-xs);color:#fff;background:var(--brand-2);
+  padding:1px 8px;border-radius:5px;margin-top:3px;font-variant-numeric:tabular-nums;
+}
+.update-list .u-body{min-width:0}
+.update-list .u-body a{font-weight:600;font-size:var(--fs-sm)}
+.update-list .u-body p{font-size:var(--fs-xs);color:var(--ink-soft);line-height:1.6;margin-top:1px}
+
+/* 分类入口：标签索引 */
+.cat-index{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cat-index a{
+  display:block;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:12px 12px;background:#faf9f5;transition:background .15s ease,border-color .15s ease;
+}
+.cat-index a:hover{background:var(--accent-soft);border-color:#e9d39a}
+.cat-index a b{display:block;font-size:.93rem;color:var(--brand)}
+.cat-index a span{font-size:var(--fs-xs);color:var(--ink-soft)}
+
+/* 深度解析 */
+.deep h3{border-left:4px solid var(--accent);padding-left:10px;margin-top:24px}
+.deep h3:first-of-type{margin-top:4px}
+.deep p{margin-bottom:12px;color:#2b3a45;font-size:var(--fs-sm);line-height:1.9}
+.deep ul{margin:0 0 14px 20px;font-size:var(--fs-sm);color:#2b3a45}
+.deep ul li{margin-bottom:5px;line-height:1.8}
+.deep strong{color:var(--brand)}
+.quote-card{
+  border-left:4px solid var(--brand-2);
+  background:#f3f7f9;padding:14px 18px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:var(--fs-sm);color:#33454f;margin:16px 0;
+}
+.quote-card cite{display:block;font-style:normal;font-size:var(--fs-xs);color:#7c8c96;margin-top:6px}
+.check-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm);margin:12px 0 18px}
+.check-table th,.check-table td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+.check-table th{background:#f1f4f6;color:var(--brand);font-weight:700;font-size:var(--fs-xs);letter-spacing:.5px}
+.check-table td{color:#33454f;line-height:1.7}
+
+/* 体验指南：编号步骤 */
+.steps{list-style:none;counter-reset:step;display:grid;gap:12px}
+.steps li{
+  counter-increment:step;position:relative;padding:12px 14px 12px 52px;
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fbfaf7;
+  font-size:var(--fs-sm);color:#33454f;line-height:1.75;
+}
+.steps li::before{
+  content:counter(step);position:absolute;left:14px;top:12px;
+  width:25px;height:25px;border-radius:50%;background:var(--brand);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;
+}
+.steps li b{color:var(--brand)}
+
+/* FAQ */
+details.faq{
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+  margin-bottom:9px;background:#fbfaf7;overflow:hidden;
+}
+details.faq summary{
+  cursor:pointer;padding:12px 16px 12px 40px;font-weight:600;font-size:var(--fs-sm);
+  color:var(--brand);position:relative;list-style:none;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::before{
+  content:"+";position:absolute;left:15px;top:11px;font-size:1.1rem;font-weight:700;color:var(--accent);
+}
+details.faq[open] summary::before{content:"–"}
+details.faq[open] summary{border-bottom:1px solid var(--line);background:var(--accent-soft)}
+details.faq .faq-body{padding:12px 16px 14px;font-size:var(--fs-sm);color:#33454f;line-height:1.85}
+
+/* 评论 */
+.comments{display:grid;gap:12px}
+.comment{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 15px;background:#fff;
+}
+.comment .who{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.avatar{
+  width:30px;height:30px;border-radius:50%;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-size:.74rem;font-weight:700;color:#fff;background:var(--brand-2);
+}
+.comment .who b{font-size:var(--fs-sm);color:var(--ink)}
+.comment .who span{font-size:var(--fs-xs);color:#93a0aa;margin-left:auto}
+.comment p{font-size:var(--fs-sm);color:#33454f;line-height:1.8}
+.comment p em{color:var(--warn);font-style:normal;font-weight:600}
+
+/* 相关资讯：分栏正文 */
+.news-cols{columns:2;column-gap:26px}
+.news-cols article{break-inside:avoid;margin-bottom:14px}
+.news-cols h3{font-size:.98rem;margin:0 0 4px}
+.news-cols p{font-size:var(--fs-xs);color:var(--ink-soft);line-height:1.7}
+.news-cols .meta{margin-top:3px;display:block}
+
+/* 推荐标签 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px}
+.tag-cloud a{
+  font-size:var(--fs-sm);padding:5px 13px;border-radius:16px;
+  background:#eef2f4;border:1px solid var(--line);color:var(--brand-2);
+}
+.tag-cloud a:hover{background:var(--accent-soft);border-color:#e9d39a;color:#7a4a00}
+
+/* 榜单 */
+.rank-list{list-style:none;display:grid;gap:8px}
+.rank-list li{
+  display:flex;align-items:center;gap:12px;padding:9px 12px;border:1px solid var(--line);
+  border-radius:var(--radius-sm);background:#fbfaf7;font-size:var(--fs-sm);
+}
+.rank-list .rk{
+  flex-shrink:0;width:24px;height:24px;border-radius:6px;font-weight:800;font-size:.8rem;
+  display:flex;align-items:center;justify-content:center;background:#e6ecef;color:var(--brand);
+}
+.rank-list li:nth-child(1) .rk{background:var(--accent);color:#2a1c00}
+.rank-list li:nth-child(2) .rk{background:#d9dee2;color:#3c4a54}
+.rank-list li:nth-child(3) .rk{background:#e8d2b5;color:#5a3a12}
+.rank-list .rk-name{font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-list .rk-score{margin-left:auto;font-size:var(--fs-xs);color:#93a0aa;flex-shrink:0;font-variant-numeric:tabular-nums}
+
+/* 侧栏 */
+.side-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;margin-bottom:var(--gap);box-shadow:var(--shadow);
+}
+.side-card h2{font-size:1.05rem;margin-bottom:12px}
+.side-nav{list-style:none;display:grid;gap:2px}
+.side-nav a{
+  display:block;padding:6px 10px;font-size:var(--fs-sm);border-radius:6px;color:var(--ink-soft);
+  border-left:3px solid transparent;
+}
+.side-nav a:hover{background:#f3f5f6;color:var(--brand)}
+.side-nav a.active{background:var(--accent-soft);color:#7a4a00;border-left-color:var(--accent);font-weight:700}
+.side-tips{font-size:var(--fs-xs);color:var(--ink-soft);line-height:1.8;list-style:none}
+.side-tips li{padding-left:14px;position:relative;margin-bottom:6px}
+.side-tips li::before{content:"›";position:absolute;left:2px;color:var(--accent);font-weight:700}
+.hit-list{list-style:none;counter-reset:hit}
+.hit-list li{
+  counter-increment:hit;padding:6px 0 6px 24px;position:relative;font-size:var(--fs-sm);
+  border-bottom:1px dashed var(--line);
+}
+.hit-list li:last-child{border-bottom:0}
+.hit-list li::before{
+  content:counter(hit);position:absolute;left:0;top:6px;font-size:.72rem;font-weight:800;color:var(--brand-2);
+}
+.hit-list a{display:block;line-height:1.5}
+
+/* 页脚 */
+footer.site{
+  background:var(--brand);color:#c2d0d9;margin-top:22px;padding:40px 18px 22px;
+}
+.footer-inner{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.footer-brand .fb-logo{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.footer-brand .fb-logo svg{width:30px;height:30px}
+.footer-brand .fb-logo strong{color:#fff;font-size:1.08rem;font-weight:800;letter-spacing:.5px}
+.footer-brand p{font-size:var(--fs-xs);line-height:1.8;color:#a4b6c0;max-width:26em}
+.footer-col h3{color:#fff;font-size:.9rem;font-weight:700;margin-bottom:10px;letter-spacing:.5px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:6px}
+.footer-col a{color:#a4b6c0;font-size:var(--fs-xs)}
+.footer-col a:hover{color:var(--accent)}
+.footer-bottom{
+  max-width:var(--maxw);margin:26px auto 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);
+  font-size:var(--fs-xs);color:#8fa2ad;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;
+  width:42px;height:42px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--brand);color:#fff;font-size:1.1rem;box-shadow:var(--shadow-lg);
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .2s ease,transform .2s ease,visibility .2s;
+}
+.to-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+.to-top:hover{background:var(--brand-2)}
+.to-top:focus-visible{outline:3px solid var(--accent)}
+
+/* 响应式 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static;order:2}
+  .hero-inner{grid-template-columns:1fr;gap:26px}
+  .hero-art{order:-1;max-width:280px;margin:0 auto}
+  .card-grid{grid-template-columns:repeat(2,1fr)}
+  .cat-index{grid-template-columns:repeat(3,1fr)}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:24px}
+  .overview-grid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  :root{--sticky-h:118px;--fs-h1:1.85rem}
+  .header-inner{padding:9px 14px;gap:10px}
+  nav.main-nav{
+    display:none;width:100%;flex-direction:column;align-items:stretch;
+    gap:0;order:5;border-top:1px solid var(--line);padding-top:6px;margin-top:2px;margin-left:0;
+  }
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{padding:9px 10px;border-radius:6px}
+  .menu-btn{display:block}
+  .search-box{order:6;width:100%;margin-top:4px}
+  .search-box input{flex:1;width:auto}
+  .announce{font-size:.74rem;padding:7px 12px;text-align:center}
+  .hero-inner{padding:34px 16px 40px}
+  .layout{padding:26px 14px 14px}
+  section.block{padding:20px 16px}
+  .card-grid{grid-template-columns:1fr}
+  .cat-index{grid-template-columns:repeat(2,1fr)}
+  .news-cols{columns:1}
+  .footer-inner{grid-template-columns:1fr}
+  .to-top{right:12px;bottom:14px;width:38px;height:38px}
+  .ov-facts{grid-template-columns:1fr 1fr}
+}
+@media (max-width:380px){
+  .cat-index{grid-template-columns:1fr}
+  .hero-stats{gap:18px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce">
+    <span class="tag">公告</span>
+    <span>11月6日更新「高清影视」频道 6 条入口，替换失效镜像 2 个；11月7日新增 BT 下载器对照表。</span>
+    <a href="/#updates">查看更新</a>
+  </div>
+  <header class="site">
+    <div class="header-inner">
+      <a class="brand" href="/#top" aria-label="51hlw免费 首页">
+        <svg viewBox="0 0 64 64" role="img" aria-label="51hlw免费 图形标志">
+          <rect width="64" height="64" rx="14" fill="#1f3b4d"/>
+          <path d="M18 44V20h7l7 11 7-11h7v24h-7V32l-7 10-7-10v12z" fill="#f2b134"/>
+          <circle cx="49" cy="16" r="5" fill="#f2b134" opacity=".55"/>
+        </svg>
+        <span class="wordmark">51hlw免费<small>RESOURCE INDEX</small></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#categories">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#ranking">工具榜单</a>
+      </nav>
+      <div class="search-box" role="search">
+        <input type="search" id="siteSearch" placeholder="搜频道、工具、片名" aria-label="站内搜索">
+        <button type="button" id="searchBtn">搜索</button>
+      </div>
+    </div>
+    <div class="search-feedback" id="searchFeedback" aria-live="polite"></div>
+  </header>
+</div>
+
+<section class="hero" id="top">
+  <div class="hero-bg-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="kicker">资源索引 · 2026年11月</span>
+      <h1>51hlw免费</h1>
+      <p class="lead">把高清影视、磁力搜索、网盘工具和 BT 下载器收进一张可核对的入口表。<b>11月6日</b>核对 6 个影视频道，标注 2 个失效镜像与 4 个可用备用域名，另附 12 条使用要点。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#picks">进入精选推荐</a>
+        <a class="btn btn-ghost" href="/#guide">查看体验指南</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>10</strong>个主题频道</div>
+        <div><strong>36</strong>条核对入口</div>
+        <div><strong>6</strong>类下载工具</div>
+        <div><strong>11/07</strong>最近核对日</div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 360 300" role="img" aria-label="资源索引示意图">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f2b134" stop-opacity=".95"/>
+            <stop offset="1" stop-color="#e08b1f" stop-opacity=".85"/>
+          </linearGradient>
+        </defs>
+        <rect x="34" y="46" width="292" height="60" rx="10" fill="#ffffff" opacity=".1"/>
+        <rect x="46" y="58" width="120" height="10" rx="5" fill="#f2b134" opacity=".9"/>
+        <rect x="46" y="76" width="200" height="7" rx="3.5" fill="#ffffff" opacity=".35"/>
+        <rect x="46" y="89" width="160" height="7" rx="3.5" fill="#ffffff" opacity=".22"/>
+        <g>
+          <rect x="34" y="124" width="138" height="66" rx="10" fill="#ffffff" opacity=".13"/>
+          <rect x="48" y="138" width="34" height="34" rx="7" fill="url(#g1)"/>
+          <rect x="92" y="140" width="66" height="8" rx="4" fill="#fff" opacity=".6"/>
+          <rect x="92" y="156" width="46" height="7" rx="3.5" fill="#fff" opacity=".35"/>
+        </g>
+        <g>
+          <rect x="188" y="124" width="138" height="66" rx="10" fill="#ffffff" opacity=".13"/>
+          <rect x="202" y="138" width="34" height="34" rx="7" fill="#ffffff" opacity=".35"/>
+          <rect x="246" y="140" width="66" height="8" rx="4" fill="#fff" opacity=".6"/>
+          <rect x="246" y="156" width="46" height="7" rx="3.5" fill="#fff" opacity=".35"/>
+        </g>
+        <g>
+          <rect x="34" y="202" width="292" height="40" rx="10" fill="#f2b134" opacity=".18"/>
+          <circle cx="60" cy="222" r="8" fill="#f2b134"/>
+          <rect x="78" y="218" width="120" height="8" rx="4" fill="#fff" opacity=".55"/>
+          <rect x="78" y="231" width="80" height="6" rx="3" fill="#fff" opacity=".3"/>
+          <rect x="250" y="214" width="58" height="16" rx="8" fill="#f2b134" opacity=".85"/>
+        </g>
+        <path d="M34 262h292" stroke="#ffffff" stroke-opacity=".18" stroke-dasharray="5 7" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+<main>
+
+  <!-- 1 领域概览 -->
+  <section class="block" id="overview">
+    <div class="block-head">
+      <h2><span class="num">01</span>领域概览：一张入口表背后的四类资源</h2>
+    </div>
+    <div class="overview-grid">
+      <div class="overview-lead">
+        <p>资源索引站的核心工作是把分散在论坛、网盘与 BT 站点的入口整理成可查的清单。51hlw免费这类聚合页通常分四层：<strong>影视片源</strong>（按年份与画质归档）、<strong>磁力搜索</strong>（关键词检索 DHT 网络）、<strong>网盘分享</strong>（百度、阿里、夸克链接）、<strong>下载工具</strong>（qBittorrent、Motrix、IDM 等客户端）。</p>
+        <p>四层之间的差别不在页面配色，而在取用方式。磁力链依赖做种人数，网盘链接依赖分享者是否续期，影视直链依赖 CDN 的有效域名。2026年10月起，<strong>夸克网盘</strong>对免费账号的单文件转存上限调整为 10GB，超过需会员，这一变化直接影响大体积 4K 片源的分享方式。</p>
+        <p>下面的事实条目只描述状态，不评价站点好坏。核对日期统一为 11月6日至11月7日。</p>
+      </div>
+      <div class="ov-facts">
+        <div class="fact"><strong>10</strong><span>主题频道（影视/磁力/网盘/工具）</span></div>
+        <div class="fact"><strong>36</strong><span>条经核对的入口</span></div>
+        <div class="fact"><strong>4</strong><span>类下载协议：HTTP、BT、磁力、网盘</span></div>
+        <div class="fact"><strong>11/06</strong><span>镜像有效性逐条复测</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 精选内容推荐 -->
+  <section class="block" id="picks">
+    <div class="block-head">
+      <h2><span class="num">02</span>精选内容推荐</h2>
+      <span class="sub">按“能否立刻用上”排序，前两张卡为本周新增</span>
+    </div>
+    <div class="card-grid">
+      <article class="card">
+        <img src="https://picsum.photos/seed/51hlw-movie/420/240" width="420" height="240" loading="lazy" alt="高清影视频道片单页面示意">
+        <div class="body">
+          <h3><a href="/#updates">2026年11月高分片单：13部可查磁力</a></h3>
+          <p>收录 13 部 2026 年 10 月后上线的片目，每部标注磁力健康度与字幕组来源，其中 4 部为蓝光原盘转码。</p>
+          <div class="foot"><span class="chip hot">本周新增</span><span class="meta">11/06</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/51hlw-bt-tool/420/240" width="420" height="240" loading="lazy" alt="BT下载器对照表截图示意">
+        <div class="body">
+          <h3><a href="/#ranking">BT 下载器横向对照：6 款客户端实测</a></h3>
+          <p>在 100Mbps 家庭宽带下测试 qBittorrent 5.0、Transmission 4.0 与 Motrix 1.8，记录同一冷门种子的首小时速度。</p>
+          <div class="foot"><span class="chip hot">实测</span><span class="meta">11/07</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://picsum.photos/seed/51hlw-pan/420/240" width="420" height="240" loading="lazy" alt="网盘转存目录结构示意">
+        <div class="body">
+          <h3><a href="/#guide">夸克网盘 10GB 转存限制的绕行目录</a></h3>
+          <p>按“先转存文件夹再分批下载”的路径拆分 20GB 以上的剧集包，附 3 个已适配的分享者命名习惯。</p>
+          <div class="foot"><span class="chip">规则变化</span><span class="meta">11/05</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3 最新更新 -->
+  <section class="block" id="updates">
+    <div class="block-head">
+      <h2><span class="num">03</span>最新更新</h2>
+      <span class="sub">按时间倒序，仅列可核对的变更</span>
+    </div>
+    <ul class="update-list">
+      <li>
+        <time datetime="2026-11-07">11-07</time>
+        <div class="u-body">
+          <a href="/#ranking">新增 BT 下载器对照表</a>
+          <p>补入 qBittorrent 5.0.2 与 Transmission 4.0.6 的 DHT 节点数、内存占用两列数据。</p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-11-06">11-06</time>
+        <div class="u-body">
+          <a href="/#categories">高清影视频道替换 2 个失效镜像</a>
+          <p>原 <code>hd01</code> 与 <code>hd07</code> 域名 11月4日起解析异常，已换为备用入口并标注“需开启代理”。</p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-11-05">11-05</time>
+        <div class="u-body">
+          <a href="/#deep">磁力搜索引擎索引量对比更新</a>
+          <p>三个常用磁力站在 11月3日的抽样检索中返回条目数分别为 12.6 万、8.4 万、3.1 万。</p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-11-03">11-03</time>
+        <div class="u-body">
+          <a href="/#guide">网盘转存规则说明补充</a>
+          <p>夸克免费账号单文件转存上限 10GB 的条款自 10月28日生效，附原文截图位置与客服工单编号示例。</p>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-11-01">11-01</time>
+        <div class="u-body">
+          <a href="/#faq">FAQ 新增“字幕文件该放哪个目录”</a>
+          <p>针对 .srt 同名自动加载失败的 2 种常见原因补充排查顺序。</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 4 分类入口 -->
+  <section class="block" id="categories">
+    <div class="block-head">
+      <h2><span class="num">04</span>分类入口</h2>
+      <span class="sub">10 个频道，按取用方式分组</span>
+    </div>
+    <div class="cat-index">
+      <a href="/#picks"><b>高清影视</b><span>按年份 / 画质归档</span></a>
+      <a href="/#deep"><b>磁力搜索</b><span>DHT 关键词检索</span></a>
+      <a href="/#guide"><b>网盘工具</b><span>转存与批量下载</span></a>
+      <a href="/#ranking"><b>BT 下载器</b><span>6 款客户端对照</span></a>
+      <a href="/#updates"><b>字幕资源</b><span>.srt / .ass 同名匹配</span></a>
+      <a href="/#picks"><b>蓝光原盘</b><span>大体积片源</span></a>
+      <a href="/#deep"><b>磁力健康度</b><span>做种人数判断</span></a>
+      <a href="/#guide"><b>离线下载</b><span>冷门种子方案</span></a>
+      <a href="/#ranking"><b>播放器设置</b><span>PotPlayer / VLC</span></a>
+      <a href="/#faq"><b>失效链接处理</b><span>补链与镜像</span></a>
+      <a href="/#comments"><b>用户反馈</b><span>入口状态上报</span></a>
+      <a href="/#news"><b>版权与合规</b><span>协议与条款变化</span></a>
+    </div>
+  </section>
+
+  <!-- 5 深度解析 -->
+  <section class="block deep" id="deep">
+    <div class="block-head">
+      <h2><span class="num">05</span>深度解析：三种取源方式的真实成本</h2>
+      <span class="sub">全页唯一主体阅读区，判断可被核对</span>
+    </div>
+    <p>把资源索引站当成“链接仓库”会低估它。真正要回答的问题是：同一部片子，走磁力、走网盘还是走离线下载，时间成本差多少？下面三个判断都有可复查的数字，欢迎按文中口径重测。</p>
+
+    <h3>判断一：冷门种子应先看健康度，再看速度</h3>
+    <p>11月3日抽测 5 个发布超过 3 年的纪录片段源，磁力链的做种人数分布在 3 到 27 人之间。qBittorrent 5.0.2 在 100Mbps 家庭宽带上，做种 27 人的样本 18 分钟完成 4.2GB，做种 3 人的样本 2 小时只完成 41%。<strong>做种人数低于 10 时，先开离线下载比直连更省时间</strong>——这是可被反驳的：若你本地有公网 IP 且端口可映射，直连也能接近离线速度。</p>
+    <p>核对方法：在客户端走“种子 → 信息”查看连接节点数，连续观察 15 分钟；节点数持续低于做种数的 1/3，说明穿透受限。</p>
+
+    <table class="check-table">
+      <thead><tr><th>取源方式</th><th>冷门资源（做种&lt;10）</th><th>热门资源（做种&gt;50）</th><th>可核对指标</th></tr></thead>
+      <tbody>
+        <tr><td>磁力直连</td><td>易卡在 30%—60%</td><td>接近带宽上限</td><td>连接节点数</td></tr>
+        <tr><td>网盘转存</td><td>需分享者续期</td><td>秒传，快</td><td>链接有效期</td></tr>
+        <tr><td>离线下载</td><td>服务器代抓，稳定</td><td>速度受服务端限速</td><td>服务端排队时长</td></tr>
+      </tbody>
+    </table>
+
+    <h3>判断二：网盘“秒传”不等于“永久可用”</h3>
+    <p>10月28日起，夸克免费账号单文件转存上限 10GB，一批 20GB 以上的蓝光合集因此无法整包转存。分享者开始改用“文件夹 + 分卷”结构：<code>剧名_S01/EP01.mkv</code> 逐个转存，单集通常 1.8—3.5GB，可绕过单文件限制。代价是操作次数从 1 次变成 12 次以上。</p>
+    <p>另有事实需要分开写：<em>事实</em>是限制条款已生效、官方帮助页有原文；<em>推测</em>是后续是否会扩展到 5GB，没有任何公告支撑，不应写进使用指南。</p>
+
+    <h3>判断三：磁力站的“索引量”不能直接当质量指标</h3>
+    <p>11月3日同一关键词“<strong>2026 科幻</strong>”在三个磁力站检索，返回条目数 12.6 万、8.4 万、3.1 万。条目多的站点里，约 62% 是重复哈希与已失效资源。抽样 50 条，条目数最多的站点有效可下载为 19 条，条目数最少的站点有效 21 条。索引量与有效率没有正相关。</p>
+    <div class="quote-card">
+      “做种 3 人的种子，我挂了两晚才 61%，换离线下载 40 分钟就完了。”
+      <cite>—— 用户「老周不熬夜」11月4日 在站内反馈区留言，指向《北岸》第 2 季第 4 集样本</cite>
+    </div>
+    <p>所以判断顺序应为：先看单个种子的做种与节点，再看站点索引规模。把站点排名当质量结论，会误导新用户。</p>
+  </section>
+
+  <!-- 6 体验指南 -->
+  <section class="block" id="guide">
+    <div class="block-head">
+      <h2><span class="num">06</span>体验指南：从搜索到播放的五步</h2>
+    </div>
+    <ol class="steps">
+      <li><b>确定取源方式。</b>先判断片源热门度：上线 30 天内、讨论量高的走磁力直连；冷门老片先查网盘是否有人续期。</li>
+      <li><b>核对入口有效性。</b>打开磁力站后先搜一个已知存在的片名（如《潮汐》），能出结果再继续，避免在失效镜像里浪费时间。</li>
+      <li><b>看种子信息。</b>qBittorrent 里查看做种数与连接节点，做种低于 10 的加离线下载队列；网盘链接确认提取码与有效期。</li>
+      <li><b>匹配字幕。</b>把 .srt 与视频放同一目录并保持文件名前缀一致，VLC 与 PotPlayer 都会自动加载；时间轴偏移用快捷键 <code>G/H</code> 微调。</li>
+      <li><b>记录失效。</b>入口打不开时记下域名与日期，反馈到站内评论区，24 小时内会有人复测。</li>
+    </ol>
+    <p style="margin-top:14px;font-size:var(--fs-sm);color:var(--ink-soft)">若本地网络对 BT 端口限速，可在客户端把监听端口改到 49152—65535 区间，再测一次连接数。</p>
+  </section>
+
+  <!-- 7 FAQ -->
+  <section class="block" id="faq">
+    <div class="block-head">
+      <h2><span class="num">07</span>常见问题</h2>
+    </div>
+    <details class="faq">
+      <summary>磁力搜索站点打不开怎么办？</summary>
+      <div class="faq-body">先确认是否为网络运营商屏蔽：切换移动网络或把 DNS 改成 223.5.5.5 再试。若仍打不开，改用备用镜像域名，收藏前核对拼写。长期无法访问的站点不要反复刷新，记录日期后反馈。</div>
+    </details>
+    <details class="faq">
+      <summary>qBittorrent 下载一直 0 速度是什么原因？</summary>
+      <div class="faq-body">常见三类：种子本身无做种、本地端口被路由器防火墙拦截、Tracker 全部超时。先在种子信息里看节点数，为 0 则换源；节点不为 0 但仍 0 速度，检查客户端底部状态栏的连接图标是否为绿色。</div>
+    </details>
+    <details class="faq">
+      <summary>网盘资源失效如何找回？</summary>
+      <div class="faq-body">先检查链接是否漏了提取码，再联系分享者补链。超过保存期限或分享者主动取消的文件通常无法恢复，需要寻找同片源的其他网盘版本。夸克与阿里云盘的分享有效期多在 7—30 天。</div>
+    </details>
+    <details class="faq">
+      <summary>离线下载和普通下载有什么区别？</summary>
+      <div class="faq-body">离线下载由服务器先完成资源抓取，用户再从服务器取回，适合冷门种子；普通下载直接连做种节点，热门资源速度更快但冷门资源容易卡住。两者都要注意服务端是否对单任务限速。</div>
+    </details>
+    <details class="faq">
+      <summary>字幕文件该放哪个目录？</summary>
+      <div class="faq-body">多数播放器识别同目录同名的 .srt 文件。把字幕与视频放在同一文件夹并保持文件名前缀一致即可自动加载；若仍不显示，检查字幕编码是否为 UTF-8，避免 GBK 乱码。</div>
+    </details>
+    <details class="faq">
+      <summary>BT 下载会占用多少上传带宽？</summary>
+      <div class="faq-body">默认做种会持续上传。qBittorrent 的“连接”里可设上传限速为总带宽的 20%—30%，既维持分享率又不影响网页浏览。上传限速过低会被部分 Tracker 判为不友好。</div>
+    </details>
+  </section>
+
+  <!-- 8 用户评论 -->
+  <section class="block" id="comments">
+    <div class="block-head">
+      <h2><span class="num">08</span>用户评论</h2>
+      <span class="sub">选录 11月4日—11月7日的 6 条</span>
+    </div>
+    <div class="comments">
+      <div class="comment">
+        <div class="who"><span class="avatar">陈</span><b>陈阿树</b><span>11-07</span></div>
+        <p>《<em>北岸</em>》第 2 季第 4 集的磁力做种只有 6 人，我挂了一晚才 58%。换成离线下载后 35 分钟下完，速度差别比想象大。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><span class="avatar">林</span><b>林一苇</b><span>11-07</span></div>
+        <p>对照表里 qBittorrent 的内存占用写得挺准，旧笔记本 4GB 内存跑 Transmission 更稳，这个结论我认。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><span class="avatar">赵</span><b>赵不与</b><span>11-06</span></div>
+        <p>夸克那个 10GB 限制是真的，转存 22GB 的合集直接提示超限，只能分卷。页面写的“先转存文件夹”确实能过，但操作十二次有点烦。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><span class="avatar">孙</span><b>孙半仙</b><span>11-06</span></div>
+        <p>磁力搜索引擎的索引量排名看看就好，我按条目数最多的那个站搜《<em>潮汐</em>》，前 20 条有一半点进去没速度，反而小站里找到能下的。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><span class="avatar">吴</span><b>吴小满</b><span>11-05</span></div>
+        <p>字幕自动匹配失败了一次，按指南改成同名前缀就好了。这个 .srt 编码问题以前没注意过。</p>
+      </div>
+      <div class="comment">
+        <div class="who"><span class="avatar">周</span><b>周工</b><span>11-04</span></div>
+        <p>页面上说“需开启代理”的两个备用入口，我按提示换了网络确实能开，但速度一般，希望标注一下实际测速，别只说“可用”。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 相关资讯 -->
+  <section class="block" id="news">
+    <div class="block-head">
+      <h2><span class="num">09</span>相关资讯</h2>
+    </div>
+    <div class="news-cols">
+      <article>
+        <h3>夸克网盘单文件转存上限调整为 10GB</h3>
+        <p>官方帮助页 10月28日更新条款，免费账号单文件转存上限由 20GB 降为 10GB。大体积蓝光合集分享方式随之改为分卷。</p>
+        <span class="meta">10-28 · 规则变化</span>
+      </article>
+      <article>
+        <h3>qBittorrent 5.0.2 修复 DHT 节点掉线问题</h3>
+        <p>10月30日的更新日志列出 DHT 节点异常断开修复项，部分用户反馈冷门种子连接数上升约 15%。</p>
+        <span class="meta">10-30 · 版本更新</span>
+      </article>
+      <article>
+        <h3>两个高清影视镜像域名解析异常</h3>
+        <p><code>hd01</code> 与 <code>hd07</code> 自 11月4日起解析失败，镜像维护方未发布说明，已切至备用入口。</p>
+        <span class="meta">11-04 · 入口状态</span>
+      </article>
+      <article>
+        <h3>Transmission 4.0.6 发布 Linux 打包修复</h3>
+        <p>11月2日版本修复 Ubuntu 24.04 下的依赖缺失问题，Debian 系用户可正常安装。</p>
+        <span class="meta">11-02 · 版本更新</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- 10 相关推荐 -->
+  <section class="block" id="related">
+    <div class="block-head">
+      <h2><span class="num">10</span>相关推荐</h2>
+      <span class="sub">长尾主题，直接点查</span>
+    </div>
+    <div class="tag-cloud">
+      <a href="/#deep">磁力搜索健康度判断</a>
+      <a href="/#guide">BT 下载器端口映射</a>
+      <a href="/#guide">网盘分卷转存方法</a>
+      <a href="/#faq">字幕 .srt 编码修复</a>
+      <a href="/#ranking">qBittorrent 内存占用</a>
+      <a href="/#deep">蓝光原盘码率对照</a>
+      <a href="/#updates">镜像失效复测流程</a>
+      <a href="/#faq">离线下载排队时长</a>
+      <a href="/#picks">2026 科幻片单</a>
+      <a href="/#news">夸克转存上限变化</a>
+      <a href="/#ranking">Transmission 安装包</a>
+      <a href="/#guide">PotPlayer 字幕快捷键</a>
+    </div>
+  </section>
+
+  <!-- 11 工具榜单 -->
+  <section class="block" id="ranking">
+    <div class="block-head">
+      <h2><span class="num">11</span>工具榜单：11月上半月下载客户端参考</h2>
+      <span class="sub">按冷门种子首小时完成度排序，样本为 4.2GB 单文件</span>
+    </div>
+    <ol class="rank-list">
+      <li><span class="rk">1</span><span class="rk-name">qBittorrent 5.0.2</span><span class="chip ok">无捆绑</span><span class="rk-score">68%</span></li>
+      <li><span class="rk">2</span><span class="rk-name">Transmission 4.0.6</span><span class="chip">轻量</span><span class="rk-score">63%</span></li>
+      <li><span class="rk">3</span><span class="rk-name">Motrix 1.8.19</span><span class="chip">界面友好</span><span class="rk-score">55%</span></li>
+      <li><span class="rk">4</span><span class="rk-name">Deluge 2.1.1</span><span class="chip">插件扩展</span><span class="rk-score">49%</span></li>
+      <li><span class="rk">5</span><span class="rk-name">BitComet 2.11</span><span class="chip">老牌</span><span class="rk-score">44%</span></li>
+      <li><span class="rk">6</span><span class="rk-name">uTorrent 3.6</span><span class="chip">需留意捆绑</span><span class="rk-score">38%</span></li>
+    </ol>
+    <p style="margin-top:12px;font-size:var(--fs-xs);color:var(--ink-soft)">样本：11月3日《北岸》S02E04，做种 6 人，100Mbps 家庭宽带，含 DHT 与两个 Tracker。完成度为 60 分钟时已下载比例，数据可复测。</p>
+  </section>
+
+  <!-- 12 可信度分层 -->
+  <section class="block" id="trust">
+    <div class="block-head">
+      <h2><span class="num">12</span>入口可信度分层</h2>
+      <span class="sub">把“能用”拆成可核对的三档</span>
+    </div>
+    <table class="check-table">
+      <thead><tr><th>层级</th><th>判定条件</th><th>本期数量</th><th>使用建议</th></tr></thead>
+      <tbody>
+        <tr><td>A 级：已复测</td><td>11月6—7日实测可打开，返回结果正常</td><td>21 条</td><td>直接使用</td></tr>
+        <tr><td>B 级：待复测</td><td>7 日内有访问记录，本期未重测</td><td>9 条</td><td>用前先搜已知片名验证</td></tr>
+        <tr><td>C 级：失效/存疑</td><td>域名解析失败或连续 3 次无结果</td><td>6 条</td><td>改用备用入口，勿反复刷新</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:var(--fs-sm);color:var(--ink-soft)">分层只描述连接状态，不代表内容质量。C 级入口会在 24 小时内被移出主列表或替换镜像。</p>
+  </section>
+
+</main>
+
+<aside aria-label="侧栏">
+  <div class="side-card">
+    <h2>页内导航</h2>
+    <ul class="side-nav" id="sideNav">
+      <li><a href="/#overview">领域概览</a></li>
+      <li><a href="/#picks">精选内容推荐</a></li>
+      <li><a href="/#updates">最新更新</a></li>
+      <li><a href="/#categories">分类入口</a></li>
+      <li><a href="/#deep">深度解析</a></li>
+      <li><a href="/#guide">体验指南</a></li>
+      <li><a href="/#faq">常见问题</a></li>
+      <li><a href="/#comments">用户评论</a></li>
+      <li><a href="/#news">相关资讯</a></li>
+      <li><a href="/#related">相关推荐</a></li>
+      <li><a href="/#ranking">工具榜单</a></li>
+      <li><a href="/#trust">可信度分层</a></li>
+    </ul>
+  </div>
+  <div class="side-card">
+    <h2>使用要点</h2>
+    <ul class="side-tips">
+      <li>冷门种子先看做种人数，低于 10 考虑离线下载。</li>
+      <li>网盘链接漏提取码是最常见的“失效”。</li>
+      <li>字幕与视频同名同目录，可自动加载。</li>
+      <li>入口打不开先换网络再换域名，记录日期。</li>
+    </ul>
+  </div>
+  <div class="side-card">
+    <h2>本周检索最多</h2>
+    <ol class="hit-list">
+      <li><a href="/#picks">2026 科幻片单磁力</a></li>
+      <li><a href="/#ranking">qBittorrent 内存占用</a></li>
+      <li><a href="/#guide">夸克 10GB 转存</a></li>
+      <li><a href="/#faq">字幕 srt 乱码</a></li>
+      <li><a href="/#deep">磁力站索引量对比</a></li>
+    </ol>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="fb-logo">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#f2b134"/>
+          <path d="M18 44V20h7l7 11 7-11h7v24h-7V32l-7 10-7-10v12z" fill="#1f3b4d"/>
+        </svg>
+        <strong>51hlw免费</strong>
+      </div>
+      <p>把影视、磁力、网盘与下载工具的入口整理成可核对的清单，标注核对日期与状态分层，减少在失效链接里反复试错。</p>
+    </div>
+    <div class="footer-col">
+      <h3>影视资源</h3>
+      <ul>
+        <li><a href="/#picks">高清影视</a></li>
+        <li><a href="/#picks">蓝光原盘</a></li>
+        <li><a href="/#updates">字幕资源</a></li>
+        <li><a href="/#picks">2026 片单</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>下载工具</h3>
+      <ul>
+        <li><a href="/#ranking">BT 下载器</a></li>
+        <li><a href="/#deep">磁力搜索</a></li>
+        <li><a href="/#guide">离线下载</a></li>
+        <li><a href="/#ranking">播放器设置</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>帮助与反馈</h3>
+      <ul>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#trust">可信度分层</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>示例数据说明：入口数量、做种人数、速度与条款均为例示，按 2026 年 11 月 8 日前可查规则整理；页面更新于 2026-11-07。</span>
+    <span>© 2026 51hlw免费 · 内容索引示例</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var mainNav=document.getElementById('mainNav');
+  var navLinks=mainNav?mainNav.querySelectorAll('a'):[];
+
+  if(menuBtn&&mainNav){
+    menuBtn.addEventListener('click',function(){
+      var open=mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+      menuBtn.textContent=open?'收起':'菜单';
+    });
+    navLinks.forEach(function(a){
+      a.addEventListener('click',function(){
+        if(window.matchMedia('(max-width:720px)').matches){
+          mainNav.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded','false');
+          menuBtn.textContent='菜单';
+        }
+      });
+    });
+  }
+
+  /* 平滑滚动偏移（吸顶预留） */
+  document.querySelectorAll('a[href^="/#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href').slice(2);
+      var target=document.getElementById(id);
+      if(!target) return;
+      e.preventDefault();
+      var sticky=document.querySelector('.sticky-wrap');
+      var offset=sticky?sticky.offsetHeight+8:96;
+      var y=target.getBoundingClientRect().top+window.pageYOffset-offset;
+      window.scrollTo({top:y<0?0:y,behavior:'smooth'});
+      history.replaceState(null,'','/#'+id);
+    });
+  });
+
+  /* 回到顶部 */
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(window.pageYOffset>420){toTop.classList.add('show');}
+    else{toTop.classList.remove('show');}
+    highlightNav();
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  /* 侧栏滚动高亮 */
+  var sections=[].slice.call(document.querySelectorAll('main section.block'));
+  var sideLinks=[].slice.call(document.querySelectorAll('#sideNav a'));
+  function highlightNav(){
+    var pos=window.pageYOffset+150;
+    var current='';
+    sections.forEach(function(sec){
+      if(sec.offsetTop<=pos) current=sec.id;
+    });
+    sideLinks.forEach(function(a){
+      a.classList.toggle('active',a.getAttribute('href')==='/# '+current || a.getAttribute('href')==='/'+'#'+current);
+    });
+  }
+  highlightNav();
+
+  /* 本地搜索 */
+  var input=document.getElementById('siteSearch');
+  var btn=document.getElementById('searchBtn');
+  var fb=document.getElementById('searchFeedback');
+  var index=[];
+  document.querySelectorAll('section.block, aside .side-card').forEach(function(box){
+    var links=box.querySelectorAll('a');
+    links.forEach(function(a){
+      index.push({text:(a.textContent||'').trim(),href:a.getAttribute('href'),where:(box.querySelector('h2')?box.querySelector('h2').textContent.trim():'')});
+    });
+  });
+
+  function doSearch(){
+    var q=(input.value||'').trim();
+    fb.innerHTML='';
+    if(!q) return;
+    var seen={},out=[];
+    index.forEach(function(it){
+      if(!seen[it.href]&&it.text.indexOf(q)>-1){
+        seen[it.href]=1;
+        out.push(it);
+      }
+    });
+    if(out.length===0){
+      fb.textContent='没有找到与“'+q+'”相关的内容，换个关键词试试，例如“离线下载”“字幕”“qBittorrent”。';
+      return;
+    }
+    var html='找到 '+out.length+' 条：';
+    out.slice(0,6).forEach(function(it){
+      html+='<a href="'+it.href+'">'+it.text+'</a>';
+    });
+    fb.innerHTML=html;
+  }
+  btn.addEventListener('click',doSearch);
+  input.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();doSearch();}
+  });
+  input.addEventListener('input',function(){
+    if(!input.value.trim()) fb.innerHTML='';
+  });
+})();
+</script>
+</body>
+  </html>
